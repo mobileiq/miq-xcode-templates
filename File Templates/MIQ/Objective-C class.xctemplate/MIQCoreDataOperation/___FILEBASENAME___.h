@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MIQCoreDataOperation"
+#import "MIQCoreDataOperation.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___ : MIQCoreDataOperation {
     
