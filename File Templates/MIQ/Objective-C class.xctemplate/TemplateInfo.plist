@@ -35,6 +35,7 @@
 				<string>NSObject</string>
 				<string>UITableViewCell</string>
 				<string>UIView</string>
+				<string>MIQCoreDataOperation</string>
 			</array>
 		</dict>
 	</array>
