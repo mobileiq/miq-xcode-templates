@@ -30,6 +30,11 @@
 		<dict>
 			<key>TargetIndices</key>
 			<array/>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>Application</string>
+			</array>
 		</dict>
 		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:ivars</key>
 		<dict>
@@ -49,6 +54,11 @@
 		<dict>
 			<key>End</key>
 			<string>@end</string>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>Application</string>
+			</array>
 		</dict>
 		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidBecomeActive</key>
 		<dict>
