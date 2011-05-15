@@ -105,8 +105,7 @@
 		<dict>
 			<key>Beginning</key>
 			<string>- (id)init {
-    self = [super init];
-    if (self) {</string>
+    if ((self = [super init])) {</string>
 			<key>End</key>
 			<string>    }
     return self;
