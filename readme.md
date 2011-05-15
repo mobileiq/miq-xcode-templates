@@ -27,3 +27,4 @@ Eventually I'd like to have a group structure something like:
 Another thing I intend to add is core data support in the unit test bundles with the core data test base class added when using core data, and also stop unit tests from being a choice, just add them by default.
 
 There's a good post here: http://blog.boreal-kiss.net/2011/03/11/a-minimal-project-template-for-xcode-4/ 
+https://gist.github.com/943736
