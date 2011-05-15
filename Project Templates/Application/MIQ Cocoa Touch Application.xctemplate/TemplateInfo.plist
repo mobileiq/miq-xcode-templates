@@ -26,7 +26,7 @@
 	[super viewDidDisappear:animated];
 }
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h</key>
 		<dict>
 			<key>TargetIndices</key>
 			<array/>
@@ -36,7 +36,7 @@
 				<string>Application</string>
 			</array>
 		</dict>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:ivars</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:ivars</key>
 		<dict>
 			<key>Beginning</key>
 			<string>@interface ___PACKAGENAMEASIDENTIFIER___AppDelegate : NSObject &lt;UIApplicationDelegate&gt; {
@@ -47,10 +47,9 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:window</key>
-		<string>@property (nonatomic, retain) IBOutlet UIWindow *window;
-</string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:window</key>
+		<string>@property (nonatomic, retain) IBOutlet UIWindow *window;</string>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m</key>
 		<dict>
 			<key>End</key>
 			<string>@end</string>
@@ -60,7 +59,7 @@
 				<string>Application</string>
 			</array>
 		</dict>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidBecomeActive</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidBecomeActive</key>
 		<dict>
 			<key>Beginning</key>
 			<string>- (void)applicationDidBecomeActive:(UIApplication *)application {</string>
@@ -70,12 +69,12 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidBecomeActive:comments</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidBecomeActive:comments</key>
 		<string>/*
  Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
  */
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidEnterBackground</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidEnterBackground</key>
 		<dict>
 			<key>Beginning</key>
 			<string>- (void)applicationDidEnterBackground:(UIApplication *)application {</string>
@@ -85,13 +84,13 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidEnterBackground:comments</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidEnterBackground:comments</key>
 		<string>/*
  Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
  If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
  */
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationLifecycle</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationLifecycle</key>
 		<string>- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
     // Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
 }
@@ -115,7 +114,7 @@
      */
 }
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillEnterForeground</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillEnterForeground</key>
 		<dict>
 			<key>Beginning</key>
 			<string>- (void)applicationWillEnterForeground:(UIApplication *)application {</string>
@@ -125,12 +124,12 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillEnterForeground:comments</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillEnterForeground:comments</key>
 		<string>/*
  Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
  */
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillResignActive</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillResignActive</key>
 		<dict>
 			<key>Beginning</key>
 			<string>- (void)applicationWillResignActive:(UIApplication *)application {</string>
@@ -140,13 +139,13 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillResignActive:comments</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillResignActive:comments</key>
 		<string>/*
  Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
  Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
  */
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillTerminate</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillTerminate</key>
 		<dict>
 			<key>Beginning</key>
 			<string>- (void)applicationWillTerminate:(UIApplication *)application {</string>
@@ -156,14 +155,14 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillTerminate:comments</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillTerminate:comments</key>
 		<string>/*
  Called when the application is about to terminate.
  Save data if appropriate.
  See also applicationDidEnterBackground:.
  */
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions</key>
 		<dict>
 			<key>Beginning</key>
 			<string>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {</string>
@@ -174,9 +173,9 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:comments</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:comments</key>
 		<string>// Override point for customization after application launch.</string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:implementation</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:implementation</key>
 		<string>@implementation ___PACKAGENAMEASIDENTIFIER___AppDelegate
 
 </string>
@@ -216,23 +215,23 @@ return retVal;
 		<string>___PACKAGENAME___-Info.plist:iPhone</string>
 		<string>___PACKAGENAME___-Info.plist:NSMainNibFile</string>
 		<string>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:comments</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:import:importCocoa</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:class</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:ivars</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:window</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:comments</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:import:___PACKAGENAMEASIDENTIFIER___AppDelegate.h</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:implementation</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:window = window_</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:comments</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillResignActive:comments</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidEnterBackground:comments</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillEnterForeground:comments</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidBecomeActive:comments</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillTerminate:comments</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:window_</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:comments</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:import:importCocoa</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:class</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:ivars</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:window</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:comments</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:import:___PACKAGENAMEASIDENTIFIER___AppDelegate.h</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:implementation</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:window = window_</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:comments</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillResignActive:comments</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidEnterBackground:comments</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillEnterForeground:comments</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidBecomeActive:comments</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillTerminate:comments</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:window_</string>
 	</array>
 	<key>Options</key>
 	<array>

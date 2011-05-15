@@ -282,16 +282,16 @@ self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
     // For example: self.myOutlet = nil;
 }
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:detailViewController</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:detailViewController</key>
 		<string>@property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:rootViewController</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:rootViewController</key>
 		<string>@property (nonatomic, retain) IBOutlet RootViewController *rootViewController;
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:splitViewController</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:splitViewController</key>
 		<string>@property (nonatomic, retain) IBOutlet UISplitViewController *splitViewController;
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
 		<string>// Add the split view controller's view to the window and display.
 self.window.rootViewController = self.splitViewController;
 [self.window makeKeyAndVisible];
@@ -322,20 +322,20 @@ self.window.rootViewController = self.splitViewController;
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>
 	<array>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:import:RootViewController.h</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:import:RootViewController.h</string>
 		<string>en.lproj/MainWindow.xib</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:class:RootViewController</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:class:DetailViewController</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:ivars</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:splitViewController</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:rootViewController</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:detailViewController</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:splitViewController = splitViewController_</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:rootViewController = rootViewController_</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:detailViewController = detailViewController_</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:splitViewController_</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:rootViewController_</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:detailViewController_</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:class:RootViewController</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:class:DetailViewController</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:ivars</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:splitViewController</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:rootViewController</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:detailViewController</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:splitViewController = splitViewController_</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:rootViewController = rootViewController_</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:detailViewController = detailViewController_</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:splitViewController_</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:rootViewController_</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:detailViewController_</string>
 		<string>DetailViewController.h:comments</string>
 		<string>DetailViewController.h:import:importCocoa</string>
 		<string>DetailViewController.h:class</string>
@@ -677,7 +677,7 @@ if (![[self fetchedResultsController] performFetch:&amp;error]) {
 							<key>Path</key>
 							<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
 						</dict>
-						<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:awakeFromNib</key>
+						<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:awakeFromNib</key>
 						<string>- (void)awakeFromNib {
     // Pass the managed object context to the root view controller.
     self.rootViewController.managedObjectContext = self.managedObjectContext; 
@@ -695,12 +695,12 @@ if (![[self fetchedResultsController] performFetch:&amp;error]) {
 					</dict>
 					<key>Nodes</key>
 					<array>
-						<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:import:DetailViewController.h</string>
+						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:import:DetailViewController.h</string>
 						<string>DetailViewController.h:methods:rootViewController</string>
 						<string>DetailViewController.h:methods:insertNewObject</string>
 						<string>DetailViewController.m:synthesize:rootViewController = rootViewController_</string>
 						<string>DetailViewController.m:insertNewObject</string>
-						<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:awakeFromNib</string>
+						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:awakeFromNib</string>
 						<string>RootViewController.h:ivars</string>
 						<string>RootViewController.h:methods:coreData</string>
 						<string>RootViewController.m:import:coreData</string>

@@ -11,7 +11,7 @@
 	<true/>
 	<key>Definitions</key>
 	<dict>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:makeKeyAndVisible</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:makeKeyAndVisible</key>
 		<string>[[self window] makeKeyAndVisible];
 </string>
 	</dict>
@@ -23,7 +23,7 @@
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>
 	<array>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:makeKeyAndVisible</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:makeKeyAndVisible</string>
 	</array>
 	<key>Options</key>
 	<array>

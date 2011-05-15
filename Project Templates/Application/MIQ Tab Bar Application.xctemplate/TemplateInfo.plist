@@ -34,7 +34,7 @@
 				<string>View Controllers</string>
 			</array>
 		</dict>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:ivars</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:ivars</key>
 		<dict>
 			<key>Beginning</key>
 			<string>@interface ___PACKAGENAMEASIDENTIFIER___AppDelegate : NSObject &lt;UIApplicationDelegate, UITabBarControllerDelegate&gt; {
@@ -45,15 +45,15 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:tabBarController</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:tabBarController</key>
 		<string>@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
 		<string>// Add the tab bar controller's current view as a subview of the window
 self.window.rootViewController = [self tabBarController];
 [[self window] makeKeyAndVisible];
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:tabBarMethods</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:tabBarMethods</key>
 		<string>// Optional UITabBarControllerDelegate method.
 //- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
 //}
@@ -71,10 +71,10 @@ self.window.rootViewController = [self tabBarController];
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>
 	<array>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:tabBarController</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:tabBarController = tabBarController_</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:tabBarMethods</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:tabBarController_</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:tabBarController</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:tabBarController = tabBarController_</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:tabBarMethods</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:tabBarController_</string>
 		<string>Classes/View Controllers/FirstViewController.h</string>
 		<string>Classes/View Controllers/FirstViewController.m</string>
 		<string>Classes/View Controllers/SecondViewController.h</string>

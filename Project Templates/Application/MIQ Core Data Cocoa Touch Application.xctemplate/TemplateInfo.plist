@@ -34,7 +34,7 @@
 							<key>Path</key>
 							<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
 						</dict>
-						<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:coreData</key>
+						<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:coreData</key>
 						<string>@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
@@ -42,13 +42,13 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 </string>
-						<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillTerminate:comments</key>
+						<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillTerminate:comments</key>
 						<string>// Saves changes in the application's managed object context before the application terminates.
 </string>
-						<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillTerminate:save</key>
+						<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillTerminate:save</key>
 						<string>[self saveContext];
 </string>
-						<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:awakeFromNib</key>
+						<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:awakeFromNib</key>
 						<string>- (void)awakeFromNib {
     /*
      Typically you should set up the Core Data stack here, usually by passing the managed object context to the first view controller.
@@ -56,7 +56,7 @@
     */
 }
 </string>
-						<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:coreData</key>
+						<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:coreData</key>
 						<string>- (void)saveContext {
     NSError *error = nil;
     NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
@@ -164,16 +164,16 @@
 					<key>Nodes</key>
 					<array>
 						<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
-						<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:awakeFromNib</string>
-						<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:coreData</string>
-						<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:managedObjectContext = managedObjectContext_</string>
-						<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:managedObjectModel = managedObjectModel_</string>
-						<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:persistentStoreCoordinator = persistentStoreCoordinator_</string>
-						<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:managedObjectContext_</string>
-						<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:managedObjectModel_</string>
-						<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:persistentStoreCoordinator_</string>
-						<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillTerminate:save</string>
-						<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:coreData</string>
+						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:awakeFromNib</string>
+						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:coreData</string>
+						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:managedObjectContext = managedObjectContext_</string>
+						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:managedObjectModel = managedObjectModel_</string>
+						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:persistentStoreCoordinator = persistentStoreCoordinator_</string>
+						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:managedObjectContext_</string>
+						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:managedObjectModel_</string>						
+						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:persistentStoreCoordinator_</string>
+						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillTerminate:save</string>
+						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:coreData</string>
 						<string>___PACKAGENAME___-Prefix.pch:objC:importCoreData</string>
 					</array>
 					<key>Targets</key>

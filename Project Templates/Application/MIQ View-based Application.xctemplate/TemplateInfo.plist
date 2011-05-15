@@ -10,10 +10,10 @@
 	<true/>
 	<key>Definitions</key>
 	<dict>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:viewController</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:viewController</key>
 		<string>@property (nonatomic, retain) IBOutlet ___PACKAGENAMEASIDENTIFIER___ViewController *viewController;
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
 		<string> 
 self.window.rootViewController = self.viewController;
 [[self window] makeKeyAndVisible];
@@ -39,11 +39,11 @@ self.window.rootViewController = self.viewController;
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>
 	<array>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:class:___PACKAGENAMEASIDENTIFIER___ViewController</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:viewController</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:import:___PACKAGENAMEASIDENTIFIER___ViewController.h</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:viewController = viewController_</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:viewController_</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:class:___PACKAGENAMEASIDENTIFIER___ViewController</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:viewController</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:import:___PACKAGENAMEASIDENTIFIER___ViewController.h</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:viewController = viewController_</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:viewController_</string>
 		<string>Classes/View Controllers/___PACKAGENAMEASIDENTIFIER___ViewController.h</string>
 		<string>Classes/View Controllers/___PACKAGENAMEASIDENTIFIER___ViewController.m</string>
 		<string>en.lproj/___PACKAGENAMEASIDENTIFIER___ViewController.xib</string>

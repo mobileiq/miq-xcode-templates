@@ -155,10 +155,10 @@
     // For example: [self setMyOutlet:nil];
 }
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:navigationController</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:navigationController</key>
 		<string>@property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
 		<string>// Add the navigation controller's view to the window and display.
 [[self window] setRootViewController:[self navigationController]];
 [[self window] makeKeyAndVisible];</string>
@@ -182,9 +182,9 @@
 	<key>Nodes</key>
 	<array>
 		<string>en.lproj/MainWindow.xib</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:navigationController</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:navigationController = navigationController_</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:navigationController_</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:navigationController</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:navigationController = navigationController_</string>
+		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:navigationController_</string>
 		<string>RootViewController.h:comments</string>
 		<string>RootViewController.h:import:importCocoa</string>
 		<string>RootViewController.h:class</string>
@@ -435,7 +435,7 @@ self.navigationItem.rightBarButtonItem = addButton;
 							<key>Path</key>
 							<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
 						</dict>
-						<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:awakeFromNib</key>
+						<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:awakeFromNib</key>
 						<string>- (void)awakeFromNib {
     RootViewController *rootViewController = (RootViewController *)[[self navigationController] topViewController];
 	[rootViewController setManagedObjectContext:[self managedObjectContext]];
@@ -444,8 +444,8 @@ self.navigationItem.rightBarButtonItem = addButton;
 					</dict>
 					<key>Nodes</key>
 					<array>
-						<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:import:RootViewController.h</string>
-						<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:awakeFromNib</string>
+						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:import:RootViewController.h</string>
+						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:awakeFromNib</string>
 						<string>RootViewController.h:methods:coreData</string>
 						<string>RootViewController.m:import:privateCoreData</string>
 						<string>RootViewController.m:implementation:coreData</string>
