@@ -214,7 +214,7 @@ return retVal;
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:comments</string>
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:import:___PACKAGENAMEASIDENTIFIER___AppDelegate.h</string>
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:implementation</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:window=_window</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:window = window_</string>
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:comments</string>
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</string>
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillResignActive:comments</string>
@@ -222,7 +222,7 @@ return retVal;
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillEnterForeground:comments</string>
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidBecomeActive:comments</string>
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillTerminate:comments</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:_window</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:window_</string>
 	</array>
 	<key>Options</key>
 	<array>
