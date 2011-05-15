@@ -44,8 +44,8 @@ self.window.rootViewController = self.viewController;
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:import:___PACKAGENAMEASIDENTIFIER___ViewController.h</string>
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:viewController = viewController_</string>
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:viewController_</string>
-		<string>___PACKAGENAMEASIDENTIFIER___ViewController.h</string>
-		<string>___PACKAGENAMEASIDENTIFIER___ViewController.m</string>
+		<string>Classes/View Controllers/___PACKAGENAMEASIDENTIFIER___ViewController.h</string>
+		<string>Classes/View Controllers/___PACKAGENAMEASIDENTIFIER___ViewController.m</string>
 		<string>en.lproj/___PACKAGENAMEASIDENTIFIER___ViewController.xib</string>
 	</array>
 	<key>Options</key>
