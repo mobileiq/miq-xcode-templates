@@ -28,6 +28,11 @@
 			<string>SecondViewController.h</string>
 			<key>TargetIndices</key>
 			<array/>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>View Controllers</string>
+			</array>
 		</dict>
 		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:ivars</key>
 		<dict>
@@ -92,11 +97,21 @@ self.window.rootViewController = [self tabBarController];
 						<dict>
 							<key>Path</key>
 							<string>Classes/View Controllers/FirstViewControlleriPad.m</string>
+							<key>Group</key>
+							<array>
+								<string>Classes</string>
+								<string>View Controllers</string>
+							</array>
 						</dict>
 						<key>Classes/View Controllers/SecondViewController.m</key>
 						<dict>
 							<key>Path</key>
 							<string>Classes/View Controllers/SecondViewControlleriPad.m</string>
+							<key>Group</key>
+							<array>
+								<string>Classes</string>
+								<string>View Controllers</string>
+							</array>
 						</dict>
 						<key>en.lproj/FirstView.xib</key>
 						<dict>
@@ -123,11 +138,21 @@ self.window.rootViewController = [self tabBarController];
 						<dict>
 							<key>Path</key>
 							<string>Classes/View Controllers/FirstViewControlleriPhone.m</string>
+							<key>Group</key>
+							<array>
+								<string>Classes</string>
+								<string>View Controllers</string>
+							</array>
 						</dict>
 						<key>Classes/View Controllers/SecondViewController.m</key>
 						<dict>
 							<key>Path</key>
 							<string>Classes/View Controllers/SecondViewControlleriPhone.m</string>
+							<key>Group</key>
+							<array>
+								<string>Classes</string>
+								<string>View Controllers</string>
+							</array>
 						</dict>
 						<key>en.lproj/FirstView.xib</key>
 						<dict>
