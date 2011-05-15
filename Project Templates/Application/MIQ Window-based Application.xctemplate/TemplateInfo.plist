@@ -102,6 +102,11 @@
 							<key>Path</key>
 							<string>MainWindow_iPad.xib</string>
 						</dict>
+						<key>Group</key>
+						<array>
+							<string>Resources</string>
+							<string>Nibs</string>
+						</array>
 					</dict>
 				</dict>
 				<key>iPhone</key>
@@ -113,6 +118,11 @@
 							<key>Path</key>
 							<string>MainWindow_iPhone.xib</string>
 						</dict>
+						<key>Group</key>
+						<array>
+							<string>Resources</string>
+							<string>Nibs</string>
+						</array>
 					</dict>
 				</dict>
 			</dict>

@@ -117,16 +117,31 @@ self.window.rootViewController = [self tabBarController];
 						<dict>
 							<key>Path</key>
 							<string>FirstViewiPad.xib</string>
+							<key>Group</key>
+							<array>
+								<string>Resources</string>
+								<string>Nibs</string>
+							</array>
 						</dict>
 						<key>en.lproj/MainWindow.xib</key>
 						<dict>
 							<key>Path</key>
 							<string>MainWindowiPad.xib</string>
+							<key>Group</key>
+							<array>
+								<string>Resources</string>
+								<string>Nibs</string>
+							</array>
 						</dict>
 						<key>en.lproj/SecondView.xib</key>
 						<dict>
 							<key>Path</key>
 							<string>SecondViewiPad.xib</string>
+							<key>Group</key>
+							<array>
+								<string>Resources</string>
+								<string>Nibs</string>
+							</array>
 						</dict>
 					</dict>
 				</dict>
@@ -158,16 +173,31 @@ self.window.rootViewController = [self tabBarController];
 						<dict>
 							<key>Path</key>
 							<string>FirstViewiPhone.xib</string>
+							<key>Group</key>
+							<array>
+								<string>Resources</string>
+								<string>Nibs</string>
+							</array>
 						</dict>
 						<key>en.lproj/MainWindow.xib</key>
 						<dict>
 							<key>Path</key>
 							<string>MainWindowiPhone.xib</string>
+							<key>Group</key>
+							<array>
+								<string>Resources</string>
+								<string>Nibs</string>
+							</array>
 						</dict>
 						<key>en.lproj/SecondView.xib</key>
 						<dict>
 							<key>Path</key>
 							<string>SecondViewiPhone.xib</string>
+							<key>Group</key>
+							<array>
+								<string>Resources</string>
+								<string>Nibs</string>
+							</array>
 						</dict>
 					</dict>
 				</dict>

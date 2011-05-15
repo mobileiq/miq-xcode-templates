@@ -11,12 +11,12 @@
 	<true/>
 	<key>Definitions</key>
 	<dict>
-		<key>DetailViewController.h</key>
+		<key>Classes/View Controllers/DetailViewController.h</key>
 		<dict>
 			<key>TargetIndices</key>
 			<array/>
 		</dict>
-		<key>DetailViewController.h:ivars</key>
+		<key>Classes/View Controllers/DetailViewController.h:ivars</key>
 		<dict>
 			<key>Beginning</key>
 			<string>@interface DetailViewController : UIViewController &lt;UIPopoverControllerDelegate, UISplitViewControllerDelegate&gt; {
@@ -28,21 +28,21 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>DetailViewController.h:methods:detailDescriptionLabel</key>
+		<key>Classes/View Controllers/DetailViewController.h:methods:detailDescriptionLabel</key>
 		<string>@property (nonatomic, retain) IBOutlet UILabel *detailDescriptionLabel;
 </string>
-		<key>DetailViewController.h:methods:detailItem</key>
+		<key>Classes/View Controllers/DetailViewController.h:methods:detailItem</key>
 		<string>@property (nonatomic, retain) id detailItem;
 </string>
-		<key>DetailViewController.h:methods:toolbar</key>
+		<key>Classes/View Controllers/DetailViewController.h:methods:toolbar</key>
 		<string>@property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
 </string>
-		<key>DetailViewController.m</key>
+		<key>Classes/View Controllers/DetailViewController.m</key>
 		<dict>
 			<key>End</key>
 			<string>@end</string>
 		</dict>
-		<key>DetailViewController.m:configureView</key>
+		<key>Classes/View Controllers/DetailViewController.m:configureView</key>
 		<dict>
 			<key>Beginning</key>
 			<string>- (void)configureView {
@@ -54,10 +54,10 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>DetailViewController.m:configureView:detailDescriptionLabel</key>
+		<key>Classes/View Controllers/DetailViewController.m:configureView:detailDescriptionLabel</key>
 		<string>self.detailDescriptionLabel.text = [[self detailItem] description];
 </string>
-		<key>DetailViewController.m:generalMethods</key>
+		<key>Classes/View Controllers/DetailViewController.m:generalMethods</key>
 		<string>#pragma mark - Split view support
 
 - (void)splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController: (UIPopoverController *)pc {
@@ -102,7 +102,7 @@
 	// Release any cached data, images, etc that aren't in use.
 }
 </string>
-		<key>DetailViewController.m:implementation</key>
+		<key>Classes/View Controllers/DetailViewController.m:implementation</key>
 		<string>@interface DetailViewController ()
 @property (nonatomic, retain) UIPopoverController *popoverController;
 - (void)configureView;
@@ -110,7 +110,7 @@
 
 @implementation DetailViewController
 </string>
-		<key>DetailViewController.m:setDetailItem</key>
+		<key>Classes/View Controllers/DetailViewController.m:setDetailItem</key>
 		<string>#pragma mark - Managing the detail item
 
 /*
@@ -130,12 +130,12 @@
     }        
 }
 </string>
-		<key>RootViewController.h</key>
+		<key>Classes/View Controllers/RootViewController.h</key>
 		<dict>
 			<key>TargetIndices</key>
 			<array/>
 		</dict>
-		<key>RootViewController.h:ivars</key>
+		<key>Classes/View Controllers/RootViewController.h:ivars</key>
 		<dict>
 			<key>Beginning</key>
 			<string>@interface RootViewController : UITableViewController {
@@ -147,29 +147,29 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>RootViewController.h:methods:detailViewController</key>
+		<key>Classes/View Controllers/RootViewController.h:methods:detailViewController</key>
 		<string>@property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
 </string>
-		<key>RootViewController.m</key>
+		<key>Classes/View Controllers/RootViewController.m</key>
 		<dict>
 			<key>End</key>
 			<string>@end</string>
 		</dict>
-		<key>RootViewController.m:canEditRowAtIndexPath</key>
+		<key>Classes/View Controllers/RootViewController.m:canEditRowAtIndexPath</key>
 		<string>// Override to support conditional editing of the table view.
 //- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
 //    // Return NO if you do not want the specified item to be editable.
 //    return YES;
 //}
 </string>
-		<key>RootViewController.m:canMoveRowAtIndexPath:return</key>
+		<key>Classes/View Controllers/RootViewController.m:canMoveRowAtIndexPath:return</key>
 		<string>// Override to support conditional rearranging of the table view.
 //- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
 //    // Return NO if you do not want the item to be re-orderable.
 //    return YES;
 //}
 </string>
-		<key>RootViewController.m:cellForRowAtIndexPath</key>
+		<key>Classes/View Controllers/RootViewController.m:cellForRowAtIndexPath</key>
 		<dict>
 			<key>Beginning</key>
 			<string>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -187,10 +187,10 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>RootViewController.m:cellForRowAtIndexPath:configure</key>
+		<key>Classes/View Controllers/RootViewController.m:cellForRowAtIndexPath:configure</key>
 		<string>// Configure the cell.
 		</string>
-		<key>RootViewController.m:commitEditingStyle</key>
+		<key>Classes/View Controllers/RootViewController.m:commitEditingStyle</key>
 		<string>// Override to support editing the table view.
 //- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
 //
@@ -203,7 +203,7 @@
 //    }   
 //}
 </string>
-		<key>RootViewController.m:didReceiveMemoryWarning</key>
+		<key>Classes/View Controllers/RootViewController.m:didReceiveMemoryWarning</key>
 		<string>- (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -211,7 +211,7 @@
     // Relinquish ownership any cached data, images, etc that aren't in use.
 }
 </string>
-		<key>RootViewController.m:didSelectRowAtIndexPath</key>
+		<key>Classes/View Controllers/RootViewController.m:didSelectRowAtIndexPath</key>
 		<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here -- for example, create and push another view controller.
     /*
@@ -224,15 +224,15 @@
      */
 }
 </string>
-		<key>RootViewController.m:implementation</key>
+		<key>Classes/View Controllers/RootViewController.m:implementation</key>
 		<string>@implementation RootViewController
 		</string>
-		<key>RootViewController.m:moveRowAtIndexPath</key>
+		<key>Classes/View Controllers/RootViewController.m:moveRowAtIndexPath</key>
 		<string>// Override to support rearranging the table view.
 //- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
 //}
 </string>
-		<key>RootViewController.m:numberOfRowsInSection</key>
+		<key>Classes/View Controllers/RootViewController.m:numberOfRowsInSection</key>
 		<dict>
 			<key>Beginning</key>
 			<string>- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {</string>
@@ -243,10 +243,10 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>RootViewController.m:numberOfRowsInSection:return</key>
+		<key>Classes/View Controllers/RootViewController.m:numberOfRowsInSection:return</key>
 		<string>return 0;
 		</string>
-		<key>RootViewController.m:numberOfSectionsInTableView</key>
+		<key>Classes/View Controllers/RootViewController.m:numberOfSectionsInTableView</key>
 		<dict>
 			<key>Beginning</key>
 			<string>- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {</string>
@@ -257,10 +257,10 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>RootViewController.m:numberOfSectionsInTableView:return</key>
+		<key>Classes/View Controllers/RootViewController.m:numberOfSectionsInTableView:return</key>
 		<string>return 1;
 		</string>
-		<key>RootViewController.m:viewDidLoad</key>
+		<key>Classes/View Controllers/RootViewController.m:viewDidLoad</key>
 		<dict>
 			<key>Beginning</key>
 			<string>- (void)viewDidLoad {</string>
@@ -271,12 +271,12 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>RootViewController.m:viewDidLoad:super</key>
+		<key>Classes/View Controllers/RootViewController.m:viewDidLoad:super</key>
 		<string>[super viewDidLoad];
 self.clearsSelectionOnViewWillAppear = NO;
 self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
 </string>
-		<key>RootViewController.m:viewDidUnload</key>
+		<key>Classes/View Controllers/RootViewController.m:viewDidUnload</key>
 		<string>- (void)viewDidUnload {
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
@@ -336,55 +336,55 @@ self.window.rootViewController = self.splitViewController;
 		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:splitViewController_</string>
 		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:rootViewController_</string>
 		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:detailViewController_</string>
-		<string>DetailViewController.h:comments</string>
-		<string>DetailViewController.h:import:importCocoa</string>
-		<string>DetailViewController.h:class</string>
-		<string>DetailViewController.h:ivars</string>
-		<string>DetailViewController.h:methods:toolbar</string>
-		<string>DetailViewController.h:methods:detailItem</string>
-		<string>DetailViewController.h:methods:detailDescriptionLabel</string>
-		<string>DetailViewController.m:comments</string>
-		<string>DetailViewController.m:import:DetailViewController.h</string>
-		<string>DetailViewController.m:import:RootViewController.h</string>
-		<string>DetailViewController.m:implementation</string>
-		<string>DetailViewController.m:synthesize:toolbar=_toolbar</string>
-		<string>DetailViewController.m:synthesize:detailItem = detailItem_</string>
-		<string>DetailViewController.m:synthesize:detailDescriptionLabel = detailDescriptionLabel_</string>
-		<string>DetailViewController.m:synthesize:popoverController = myPopoverController_</string>
-		<string>DetailViewController.m:setDetailItem</string>
-		<string>DetailViewController.m:configureView:detailDescriptionLabel</string>
-		<string>DetailViewController.m:viewControllerMethods</string>
-		<string>DetailViewController.m:shouldAutorotateToInterfaceOrientation</string>
-		<string>DetailViewController.m:generalMethods</string>
-		<string>DetailViewController.m:dealloc:myPopoverController_</string>
-		<string>DetailViewController.m:dealloc:toolbar_</string>
-		<string>DetailViewController.m:dealloc:detailItem_</string>
-		<string>DetailViewController.m:dealloc:detailDescriptionLabel_</string>
+		<string>Classes/View Controllers/DetailViewController.h:comments</string>
+		<string>Classes/View Controllers/DetailViewController.h:import:importCocoa</string>
+		<string>Classes/View Controllers/DetailViewController.h:class</string>
+		<string>Classes/View Controllers/DetailViewController.h:ivars</string>
+		<string>Classes/View Controllers/DetailViewController.h:methods:toolbar</string>
+		<string>Classes/View Controllers/DetailViewController.h:methods:detailItem</string>
+		<string>Classes/View Controllers/DetailViewController.h:methods:detailDescriptionLabel</string>
+		<string>Classes/View Controllers/DetailViewController.m:comments</string>
+		<string>Classes/View Controllers/DetailViewController.m:import:DetailViewController.h</string>
+		<string>Classes/View Controllers/DetailViewController.m:import:RootViewController.h</string>
+		<string>Classes/View Controllers/DetailViewController.m:implementation</string>
+		<string>Classes/View Controllers/DetailViewController.m:synthesize:toolbar=_toolbar</string>
+		<string>Classes/View Controllers/DetailViewController.m:synthesize:detailItem = detailItem_</string>
+		<string>Classes/View Controllers/DetailViewController.m:synthesize:detailDescriptionLabel = detailDescriptionLabel_</string>
+		<string>Classes/View Controllers/DetailViewController.m:synthesize:popoverController = myPopoverController_</string>
+		<string>Classes/View Controllers/DetailViewController.m:setDetailItem</string>
+		<string>Classes/View Controllers/DetailViewController.m:configureView:detailDescriptionLabel</string>
+		<string>Classes/View Controllers/DetailViewController.m:viewControllerMethods</string>
+		<string>Classes/View Controllers/DetailViewController.m:shouldAutorotateToInterfaceOrientation</string>
+		<string>Classes/View Controllers/DetailViewController.m:generalMethods</string>
+		<string>Classes/View Controllers/DetailViewController.m:dealloc:myPopoverController_</string>
+		<string>Classes/View Controllers/DetailViewController.m:dealloc:toolbar_</string>
+		<string>Classes/View Controllers/DetailViewController.m:dealloc:detailItem_</string>
+		<string>Classes/View Controllers/DetailViewController.m:dealloc:detailDescriptionLabel_</string>
 		<string>en.lproj/DetailView.xib</string>
-		<string>RootViewController.h:comments</string>
-		<string>RootViewController.h:import:importCocoa</string>
-		<string>RootViewController.h:class:DetailViewController</string>
-		<string>RootViewController.h:ivars</string>
-		<string>RootViewController.h:methods:detailViewController</string>
-		<string>RootViewController.m:comments</string>
-		<string>RootViewController.m:import:RootViewController.h</string>
-		<string>RootViewController.m:import:DetailViewController.h</string>
-		<string>RootViewController.m:implementation</string>
-		<string>RootViewController.m:synthesize:detailViewController</string>
-		<string>RootViewController.m:viewDidLoad:super</string>
-		<string>RootViewController.m:viewControllerMethods</string>
-		<string>RootViewController.m:shouldAutorotateToInterfaceOrientation</string>
-		<string>RootViewController.m:numberOfSectionsInTableView:return</string>
-		<string>RootViewController.m:numberOfRowsInSection:return</string>
-		<string>RootViewController.m:cellForRowAtIndexPath:configure</string>
-		<string>RootViewController.m:canEditRowAtIndexPath</string>
-		<string>RootViewController.m:commitEditingStyle</string>
-		<string>RootViewController.m:moveRowAtIndexPath</string>
-		<string>RootViewController.m:canMoveRowAtIndexPath</string>
-		<string>RootViewController.m:didSelectRowAtIndexPath</string>
-		<string>RootViewController.m:didReceiveMemoryWarning</string>
-		<string>RootViewController.m:viewDidUnload</string>
-		<string>RootViewController.m:dealloc:detailViewController</string>
+		<string>Classes/View Controllers/RootViewController.h:comments</string>
+		<string>Classes/View Controllers/RootViewController.h:import:importCocoa</string>
+		<string>Classes/View Controllers/RootViewController.h:class:DetailViewController</string>
+		<string>Classes/View Controllers/RootViewController.h:ivars</string>
+		<string>Classes/View Controllers/RootViewController.h:methods:detailViewController</string>
+		<string>Classes/View Controllers/RootViewController.m:comments</string>
+		<string>Classes/View Controllers/RootViewController.m:import:RootViewController.h</string>
+		<string>Classes/View Controllers/RootViewController.m:import:DetailViewController.h</string>
+		<string>Classes/View Controllers/RootViewController.m:implementation</string>
+		<string>Classes/View Controllers/RootViewController.m:synthesize:detailViewController</string>
+		<string>Classes/View Controllers/RootViewController.m:viewDidLoad:super</string>
+		<string>Classes/View Controllers/RootViewController.m:viewControllerMethods</string>
+		<string>Classes/View Controllers/RootViewController.m:shouldAutorotateToInterfaceOrientation</string>
+		<string>Classes/View Controllers/RootViewController.m:numberOfSectionsInTableView:return</string>
+		<string>Classes/View Controllers/RootViewController.m:numberOfRowsInSection:return</string>
+		<string>Classes/View Controllers/RootViewController.m:cellForRowAtIndexPath:configure</string>
+		<string>Classes/View Controllers/RootViewController.m:canEditRowAtIndexPath</string>
+		<string>Classes/View Controllers/RootViewController.m:commitEditingStyle</string>
+		<string>Classes/View Controllers/RootViewController.m:moveRowAtIndexPath</string>
+		<string>Classes/View Controllers/RootViewController.m:canMoveRowAtIndexPath</string>
+		<string>Classes/View Controllers/RootViewController.m:didSelectRowAtIndexPath</string>
+		<string>Classes/View Controllers/RootViewController.m:didReceiveMemoryWarning</string>
+		<string>Classes/View Controllers/RootViewController.m:viewDidUnload</string>
+		<string>Classes/View Controllers/RootViewController.m:dealloc:detailViewController</string>
 	</array>
 	<key>Options</key>
 	<array>
@@ -397,7 +397,7 @@ self.window.rootViewController = self.splitViewController;
 				<dict>
 					<key>Definitions</key>
 					<dict>
-						<key>DetailViewController.h:ivars</key>
+						<key>Classes/View Controllers/DetailViewController.h:ivars</key>
 						<dict>
 							<key>Beginning</key>
 							<string>#import &lt;CoreData/CoreData.h&gt;
@@ -413,27 +413,27 @@ self.window.rootViewController = self.splitViewController;
 							<key>Indent</key>
 							<integer>1</integer>
 						</dict>
-						<key>DetailViewController.h:methods:detailItem</key>
+						<key>Classes/View Controllers/DetailViewController.h:methods:detailItem</key>
 						<string>@property (nonatomic, retain) NSManagedObject *detailItem;
 </string>
-						<key>DetailViewController.h:methods:insertNewObject</key>
+						<key>Classes/View Controllers/DetailViewController.h:methods:insertNewObject</key>
 						<string>- (IBAction)insertNewObject:(id)sender;
 </string>
-						<key>DetailViewController.h:methods:rootViewController</key>
+						<key>Classes/View Controllers/DetailViewController.h:methods:rootViewController</key>
 						<string>@property (nonatomic, assign) IBOutlet RootViewController *rootViewController;
 </string>
-						<key>DetailViewController.m:configureView:detailDescriptionLabel</key>
+						<key>Classes/View Controllers/DetailViewController.m:configureView:detailDescriptionLabel</key>
 						<string>// Normally should use accessor method, but using KVC here avoids adding a custom class to the template.
 self.detailDescriptionLabel.text = [[[self detailItem] valueForKey:@"timeStamp"] description];
 </string>
-						<key>DetailViewController.m:insertNewObject</key>
+						<key>Classes/View Controllers/DetailViewController.m:insertNewObject</key>
 						<string>#pragma mark - Object insertion
 
 - (IBAction)insertNewObject:(id)sender {
 	[self.rootViewController insertNewObject:sender];	
 }
 </string>
-						<key>DetailViewController.m:setDetailItem</key>
+						<key>Classes/View Controllers/DetailViewController.m:setDetailItem</key>
 						<string>#pragma mark - Managing the detail item
 
 /*
@@ -453,7 +453,7 @@ self.detailDescriptionLabel.text = [[[self detailItem] valueForKey:@"timeStamp"]
     }		
 }
 </string>
-						<key>RootViewController.h:ivars</key>
+						<key>Classes/View Controllers/RootViewController.h:ivars</key>
 						<dict>
 							<key>Beginning</key>
 							<string>#import &lt;CoreData/CoreData.h&gt;
@@ -467,23 +467,23 @@ self.detailDescriptionLabel.text = [[[self detailItem] valueForKey:@"timeStamp"]
 							<key>Indent</key>
 							<integer>1</integer>
 						</dict>
-						<key>RootViewController.h:methods:coreData</key>
+						<key>Classes/View Controllers/RootViewController.h:methods:coreData</key>
 						<string>@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 - (void)insertNewObject:(id)sender;
 </string>
-						<key>RootViewController.m:canMoveRowAtIndexPath</key>
+						<key>Classes/View Controllers/RootViewController.m:canMoveRowAtIndexPath</key>
 						<string>- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     // The table view should not be re-orderable.
     return NO;
 }
 </string>
-						<key>RootViewController.m:cellForRowAtIndexPath:configure</key>
+						<key>Classes/View Controllers/RootViewController.m:cellForRowAtIndexPath:configure</key>
 						<string>// Configure the cell.
 [self configureCell:cell atIndexPath:indexPath];
 </string>
-						<key>RootViewController.m:commitEditingStyle</key>
+						<key>Classes/View Controllers/RootViewController.m:commitEditingStyle</key>
 						<string>- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the managed object for the given index path
@@ -504,13 +504,13 @@ self.detailDescriptionLabel.text = [[[self detailItem] valueForKey:@"timeStamp"]
     }   
 }
 </string>
-						<key>RootViewController.m:configureCell</key>
+						<key>Classes/View Controllers/RootViewController.m:configureCell</key>
 						<string>- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     NSManagedObject *managedObject = [fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = [[managedObject valueForKey:@"timeStamp"] description];
 }
 </string>
-						<key>RootViewController.m:coreData</key>
+						<key>Classes/View Controllers/RootViewController.m:coreData</key>
 						<string>#pragma mark - Fetched results controller
 
 - (NSFetchedResultsController *)fetchedResultsController {
@@ -607,19 +607,19 @@ self.detailDescriptionLabel.text = [[[self detailItem] valueForKey:@"timeStamp"]
 }
  */
 </string>
-						<key>RootViewController.m:didSelectRowAtIndexPath</key>
+						<key>Classes/View Controllers/RootViewController.m:didSelectRowAtIndexPath</key>
 						<string>- (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Set the detail item in the detail view controller.
     NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
     detailViewController.detailItem = selectedObject;    
 }
 </string>
-						<key>RootViewController.m:import:coreData</key>
+						<key>Classes/View Controllers/RootViewController.m:import:coreData</key>
 						<string>@interface RootViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 </string>
-						<key>RootViewController.m:insertNewObject</key>
+						<key>Classes/View Controllers/RootViewController.m:insertNewObject</key>
 						<string>- (void)insertNewObject:(id)sender {
     NSIndexPath *currentSelection = [self.tableView indexPathForSelectedRow];
     if (currentSelection != nil) {
@@ -651,16 +651,16 @@ self.detailDescriptionLabel.text = [[[self detailItem] valueForKey:@"timeStamp"]
     detailViewController.detailItem = newManagedObject;
 }
 </string>
-						<key>RootViewController.m:moveRowAtIndexPath</key>
+						<key>Classes/View Controllers/RootViewController.m:moveRowAtIndexPath</key>
 						<string></string>
-						<key>RootViewController.m:numberOfRowsInSection:return</key>
+						<key>Classes/View Controllers/RootViewController.m:numberOfRowsInSection:return</key>
 						<string>id &lt;NSFetchedResultsSectionInfo&gt; sectionInfo = [[[self fetchedResultsController] sections] objectAtIndex:section];
 return [sectionInfo numberOfObjects];
 </string>
-						<key>RootViewController.m:numberOfSectionsInTableView:return</key>
+						<key>Classes/View Controllers/RootViewController.m:numberOfSectionsInTableView:return</key>
 						<string>return [[[self fetchedResultsController] sections] count];
 </string>
-						<key>RootViewController.m:viewDidLoad:coreData</key>
+						<key>Classes/View Controllers/RootViewController.m:viewDidLoad:coreData</key>
 						<string>NSError *error = nil;
 if (![[self fetchedResultsController] performFetch:&amp;error]) {
     /*
@@ -696,22 +696,22 @@ if (![[self fetchedResultsController] performFetch:&amp;error]) {
 					<key>Nodes</key>
 					<array>
 						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:import:DetailViewController.h</string>
-						<string>DetailViewController.h:methods:rootViewController</string>
-						<string>DetailViewController.h:methods:insertNewObject</string>
-						<string>DetailViewController.m:synthesize:rootViewController = rootViewController_</string>
-						<string>DetailViewController.m:insertNewObject</string>
+						<string>Classes/View Controllers/DetailViewController.h:methods:rootViewController</string>
+						<string>Classes/View Controllers/DetailViewController.h:methods:insertNewObject</string>
+						<string>Classes/View Controllers/DetailViewController.m:synthesize:rootViewController = rootViewController_</string>
+						<string>Classes/View Controllers/DetailViewController.m:insertNewObject</string>
 						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:awakeFromNib</string>
-						<string>RootViewController.h:ivars</string>
-						<string>RootViewController.h:methods:coreData</string>
-						<string>RootViewController.m:import:coreData</string>
-						<string>RootViewController.m:synthesize:fetchedResultsController  = fetchedResultsController_</string>
-						<string>RootViewController.m:synthesize:managedObjectContext = managedObjectContext_</string>
-						<string>RootViewController.m:viewDidLoad:coreData</string>
-						<string>RootViewController.m:configureCell</string>
-						<string>RootViewController.m:insertNewObject</string>
-						<string>RootViewController.m:coreData</string>
-						<string>RootViewController.m:dealloc:fetchedResultsController_</string>
-						<string>RootViewController.m:dealloc:managedObjectContext_</string>
+						<string>Classes/View Controllers/RootViewController.h:ivars</string>
+						<string>Classes/View Controllers/RootViewController.h:methods:coreData</string>
+						<string>Classes/View Controllers/RootViewController.m:import:coreData</string>
+						<string>Classes/View Controllers/RootViewController.m:synthesize:fetchedResultsController  = fetchedResultsController_</string>
+						<string>Classes/View Controllers/RootViewController.m:synthesize:managedObjectContext = managedObjectContext_</string>
+						<string>Classes/View Controllers/RootViewController.m:viewDidLoad:coreData</string>
+						<string>Classes/View Controllers/RootViewController.m:configureCell</string>
+						<string>Classes/View Controllers/RootViewController.m:insertNewObject</string>
+						<string>Classes/View Controllers/RootViewController.m:coreData</string>
+						<string>Classes/View Controllers/RootViewController.m:dealloc:fetchedResultsController_</string>
+						<string>Classes/View Controllers/RootViewController.m:dealloc:managedObjectContext_</string>
 					</array>
 				</dict>
 			</dict>
