@@ -73,11 +73,21 @@ self.window.rootViewController = self.viewController;
 						<dict>
 							<key>Path</key>
 							<string>MainWindowiPad.xib</string>
+							<key>Group</key>
+							<array>
+								<string>Resources</string>
+								<string>Nibs</string>
+							</array>
 						</dict>
 						<key>en.lproj/___PACKAGENAMEASIDENTIFIER___ViewController.xib</key>
 						<dict>
 							<key>Path</key>
 							<string>___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.xib</string>
+							<key>Group</key>
+							<array>
+								<string>Resources</string>
+								<string>Nibs</string>
+							</array>
 						</dict>
 					</dict>
 				</dict>
@@ -99,11 +109,21 @@ self.window.rootViewController = self.viewController;
 						<dict>
 							<key>Path</key>
 							<string>MainWindowiPhone.xib</string>
+							<key>Group</key>
+							<array>
+								<string>Resources</string>
+								<string>Nibs</string>
+							</array>
 						</dict>
 						<key>en.lproj/___PACKAGENAMEASIDENTIFIER___ViewController.xib</key>
 						<dict>
 							<key>Path</key>
 							<string>___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.xib</string>
+							<key>Group</key>
+							<array>
+								<string>Resources</string>
+								<string>Nibs</string>
+							</array>
 						</dict>
 					</dict>
 				</dict>
