@@ -30,5 +30,8 @@ The group structure for the projects (with associated sub folders) is (or should
 	
 Another thing I intend to add is to stop unit tests from being a choice, just add them by default.  Not worked that out yet, but unit tests should at least be selected.  Please use this and write tests wherever possible.
 
-There's a good post here: http://blog.boreal-kiss.net/2011/03/11/a-minimal-project-template-for-xcode-4/ 
+There's a good post here: 
+
+http://blog.boreal-kiss.net/2011/03/11/a-minimal-project-template-for-xcode-4/ 
+
 https://gist.github.com/943736
