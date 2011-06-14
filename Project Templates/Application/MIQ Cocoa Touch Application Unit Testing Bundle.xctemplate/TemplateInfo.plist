@@ -28,6 +28,30 @@
 							</array>
 						</dict>
 					</array>
+					
+					<key>Nodes</key>
+					<array>
+						<string>Core Data Tests/CoreDataTestBase.h</string>
+						<string>Core Data Tests/CoreDataTestBase.m</string>							
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>Core Data Tests/CoreDataTestBase.h</key>
+						<dict>
+							<key>Path</key>
+							<string>CoreDataTestBase.h</string>
+							<key>Group</key>
+							<string>Core Data Tests</string>
+						</dict>
+						<key>Core Data Tests/CoreDataTestBase.m</key>
+						<dict>
+							<key>Path</key>
+							<string>CoreDataTestBase.m</string>
+							<key>Group</key>
+							<string>Core Data Tests</string>
+						</dict>
+					</dict>
+					
 				</dict>
 			</dict>
 		</dict>
