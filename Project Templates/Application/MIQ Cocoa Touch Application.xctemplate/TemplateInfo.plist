@@ -284,7 +284,7 @@ return retVal;
 						<array>
 							<dict>
 								<key>Identifier</key>
-								<string>com.mobileiq.dt.unit.cocoaTouchApplicationUnitTestBundle</string>
+								<string>com.mobileiq.cocoaTouchApplicationUnitTestBundle</string>
 								<key>Name</key>
 								<string>___PACKAGENAME___Tests</string>
 							</dict>
