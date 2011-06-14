@@ -29,10 +29,15 @@
 				<dict>
 					<key>Definitions</key>
 					<dict>
-						<key>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</key>
+						<key>Resources/Model/___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</key>
 						<dict>
 							<key>Path</key>
 							<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
+							<key>Group</key>
+							<array>
+								<string>Resources</string>
+								<string>Model</string>
+							</array>
 						</dict>
 						<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:coreData</key>
 						<string>@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
@@ -163,7 +168,7 @@
 					</dict>
 					<key>Nodes</key>
 					<array>
-						<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
+						<string>Resources/Model/___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
 						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:awakeFromNib</string>
 						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:coreData</string>
 						<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:managedObjectContext = managedObjectContext_</string>
