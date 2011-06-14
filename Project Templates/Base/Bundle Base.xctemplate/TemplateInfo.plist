@@ -22,7 +22,7 @@
 			<key>Description</key>
 			<string>Your company&apos;s bundle identifier prefix.</string>
 			<key>EmptyReplacement</key>
-			<string>com.yourcompany</string>
+			<string>com.mobileiq</string>
 			<key>Type</key>
 			<string>text</string>
 		</dict>

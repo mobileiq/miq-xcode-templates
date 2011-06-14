@@ -26,6 +26,31 @@
 	[super viewDidDisappear:animated];
 }
 </string>
+		<key>Classes/Model/README.txt</key>
+		<dict>
+			<key>Path</key>
+			<string>Classes/Model/README.txt</string>
+			<key>TargetIndices</key>
+			<array />
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>Model</string>
+			</array>
+		</dict>
+		<key>Classes/Views/README.txt</key>
+		<dict>
+			<key>Path</key>
+			<string>Classes/Views/README.txt</string>
+			<key>TargetIndices</key>
+			<array />
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>Views</string>
+			</array>
+		</dict>
+		
 		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h</key>
 		<dict>
 			<key>TargetIndices</key>
@@ -232,6 +257,8 @@ return retVal;
 		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidBecomeActive:comments</string>
 		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillTerminate:comments</string>
 		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:window_</string>
+		<string>Classes/Model/README.txt</string>
+		<string>Classes/Views/README.txt</string>
 	</array>
 	<key>Options</key>
 	<array>
