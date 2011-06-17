@@ -22,10 +22,10 @@
 			<key>TargetIndices</key>
 			<array/>
 		</dict>
-		<key>SecondViewController.h</key>
+		<key>Classes/View Controllers/SecondViewController.h</key>
 		<dict>
 			<key>Path</key>
-			<string>SecondViewController.h</string>
+			<string>Classes/View Controllers/SecondViewController.h</string>
 			<key>TargetIndices</key>
 			<array/>
 			<key>Group</key>
