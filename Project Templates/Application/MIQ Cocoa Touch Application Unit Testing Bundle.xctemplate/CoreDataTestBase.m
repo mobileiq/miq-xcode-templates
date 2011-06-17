@@ -21,7 +21,7 @@
                                    configuration:nil 
                                              URL:nil 
                                          options:nil
-                                           error:NULL] retain];
+                                           error:nil] retain];
     moc_ = [[NSManagedObjectContext alloc] init];
     [moc_ setPersistentStoreCoordinator:coord_];
 }
