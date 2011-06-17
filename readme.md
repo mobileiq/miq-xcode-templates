@@ -30,6 +30,8 @@ The group structure for the projects (with associated sub folders) is (or should
 	
 Another thing I intend to add is to stop unit tests from being a choice, just add them by default.  Not worked that out yet, but unit tests should at least be selected.  Please use this and write tests wherever possible.
 
+Something else I'd like to add, but it's very complicated, so haven't managed yet, is for these templates to add a static library target that code gets added to and the unit test bundle and the main app target then link to.
+
 There's a good post here: 
 
 http://blog.boreal-kiss.net/2011/03/11/a-minimal-project-template-for-xcode-4/ 
