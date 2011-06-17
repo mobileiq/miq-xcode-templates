@@ -51,6 +51,30 @@
 			</array>
 		</dict>
 		
+		<key>Resources/Images/README.txt</key>
+		<dict>
+			<key>Path</key>
+			<string>Resources/Images/README.txt</string>
+			<key>TargetIndices</key>
+			<array />
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+				<string>Images</string>
+			</array>
+		</dict>
+		
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+				<string>en.lproj</string>
+			</array>
+		</dict>
+		<key>en.lproj/Localizable.strings:comments</key>
+		<string>/* Localizable user interface strings */</string>
+		
 		<key>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.h</key>
 		<dict>
 			<key>TargetIndices</key>
@@ -259,6 +283,9 @@ return retVal;
 		<string>Classes/Application/___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:window_</string>
 		<string>Classes/Model/README.txt</string>
 		<string>Classes/Views/README.txt</string>
+		<string>Resources/Images/README.txt</string>
+		<string>en.lproj/Localizable.strings</string>
+		<string>en.lproj/Localizable.strings:comments</string>
 	</array>
 	<key>Options</key>
 	<array>
