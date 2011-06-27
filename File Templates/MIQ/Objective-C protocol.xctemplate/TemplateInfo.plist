@@ -20,5 +20,26 @@
 	</array>
 	<key>Summary</key>
 	<string>An Objective-C protocol</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>NSObject</string>
+			<key>Description</key>
+			<string>What protocol should this be based on?</string>
+			<key>Identifier</key>
+			<string>cocoaTouchBaseProtocol</string>
+			<key>Name</key>
+			<string>Protocol is based on</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>Type</key>
+			<string>combo</string>
+			<key>Values</key>
+			<array>
+				<string>NSObject</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
