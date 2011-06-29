@@ -9,6 +9,6 @@
 #import "___FILEBASENAME___.h"
 
 
-@implementation ___VARIABLE_categoryClass___ (___FILEBASENAMEASIDENTIFIER___)
+@implementation ___VARIABLE_categoryClass___ (___VARIABLE_categoryName___)
 
 @end

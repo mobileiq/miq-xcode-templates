@@ -8,7 +8,7 @@
 		<string>public.objective-c-plus-plus-source</string>
 	</array>
 	<key>DefaultCompletionName</key>
-	<string>Category</string>
+	<string>Class+CategoryName</string>
 	<key>Description</key>
 	<string>An Objective-C category that includes the &lt;Foundation/Foundation.h&gt; header.</string>
 	<key>Kind</key>
@@ -26,6 +26,20 @@
 			<string>categoryClass</string>
 			<key>Name</key>
 			<string>Category on</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>Category</string>
+			<key>Description</key>
+			<string>What should the category be called?</string>
+			<key>Identifier</key>
+			<string>categoryName</string>
+			<key>Name</key>
+			<string>Category Name</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
