@@ -6,8 +6,8 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ___FILEBASENAMEASIDENTIFIER___ : UITableViewController
+@protocol ___FILEBASENAMEASIDENTIFIER___ <NSObject>
 
 @end

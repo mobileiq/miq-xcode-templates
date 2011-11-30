@@ -6,8 +6,12 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "Kiwi.h"
 
-@interface ___FILEBASENAMEASIDENTIFIER___ : UITableViewController
+SPEC_BEGIN(___FILEBASENAMEASIDENTIFIER___Spec)
 
-@end
+describe(@"___FILEBASENAMEASIDENTIFIER___", ^{
+    
+});
+
+SPEC_END

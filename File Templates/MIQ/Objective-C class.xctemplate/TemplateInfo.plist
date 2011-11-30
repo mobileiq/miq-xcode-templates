@@ -10,13 +10,27 @@
 	<key>DefaultCompletionName</key>
 	<string>MyClass</string>
 	<key>Description</key>
-	<string>An Objective-C class, with a header that includes the &lt;Foundation/Foundation.h&gt; header.</string>
+	<string>An Objective-C class, with implementation and header files.</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFile</key>
 	<string>___FILEBASENAME___.m</string>
 	<key>Options</key>
 	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the class to create</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>Class</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
 		<dict>
 			<key>Default</key>
 			<string>NSObject</string>
@@ -35,7 +49,6 @@
 				<string>NSObject</string>
 				<string>UITableViewCell</string>
 				<string>UIView</string>
-				<string>MIQCoreDataOperation</string>
 			</array>
 		</dict>
 	</array>
@@ -46,6 +59,6 @@
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>Summary</key>
-	<string>An Objective-C class with a header</string>
+	<string>An Objective-C class with a header for Cocoa Touch</string>
 </dict>
 </plist>

@@ -3,11 +3,10 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 #import "___FILEBASENAME___.h"
-
 
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
@@ -16,10 +15,6 @@
         // Custom initialization
     }
     return self;
-}
-
-- (void)dealloc {
-    [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -86,8 +81,8 @@
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
     // Configure the cell...
@@ -131,7 +126,6 @@
      // ...
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
      */
 }
 

@@ -3,12 +3,11 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+___IMPORTHEADER_categoryClass___
 
-
-@interface ___VARIABLE_categoryClass___ (___VARIABLE_categoryName___)
+@interface ___VARIABLE_categoryClass:identifier___ (___VARIABLE_categoryName:identifier___)
 
 @end

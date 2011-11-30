@@ -3,23 +3,18 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 #import "___FILEBASENAME___.h"
 
-
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
+- (id)init {
+    if ((self = [super initWithNibName:[[self class] description] bundle:nil])) {
         // Custom initialization
     }
     return self;
-}
-
-- (void)dealloc {
-    [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,13 +27,13 @@
 #pragma mark - View lifecycle
 
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
-// - (void)loadView {
-// }
+- (void)loadView {
+}
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-// - (void)viewDidLoad {
-//     [super viewDidLoad];
-// }
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
 
 - (void)viewDidUnload {
     [super viewDidUnload];

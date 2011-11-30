@@ -3,14 +3,11 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+___IMPORTHEADER_viewControllerSubclass___
 
-
-@interface ___FILEBASENAMEASIDENTIFIER___ : ___VARIABLE_viewControllerSubclass___ {
-    
-}
+@interface ___FILEBASENAMEASIDENTIFIER___ : ___VARIABLE_viewControllerSubclass___
 
 @end

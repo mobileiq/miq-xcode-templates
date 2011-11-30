@@ -3,11 +3,10 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 #import "___FILEBASENAME___.h"
-
 
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
@@ -22,10 +21,6 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
-}
-
-- (void)dealloc {
-    [super dealloc];
 }
 
 @end

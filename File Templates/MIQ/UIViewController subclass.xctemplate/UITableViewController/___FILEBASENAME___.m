@@ -3,7 +3,7 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 #import "___FILEBASENAME___.h"
@@ -16,10 +16,6 @@
         // Custom initialization
     }
     return self;
-}
-
-- (void)dealloc {
-    [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -86,8 +82,8 @@
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
     // Configure the cell...
@@ -95,7 +91,7 @@
     return cell;
 }
 
-// // Override to support conditional editing of the table view.
+// Override to support conditional editing of the table view.
 // - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
 //     // Return NO if you do not want the specified item to be editable.
 //     return YES;
@@ -124,15 +120,14 @@
 
 #pragma mark - Table view delegate
 
-// - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//     // Navigation logic may go here. Create and push another view controller.
-//     /*
-//      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-//      // ...
-//      // Pass the selected object to the new view controller.
-//      [self.navigationController pushViewController:detailViewController animated:YES];
-//      [detailViewController release];
-//      */
-// }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     */
+}
 
 @end
