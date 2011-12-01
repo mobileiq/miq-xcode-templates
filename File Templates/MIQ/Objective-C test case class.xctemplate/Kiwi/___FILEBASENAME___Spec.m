@@ -7,6 +7,7 @@
 //
 
 #import "Kiwi.h"
+#import "___FILEBASENAMEASIDENTIFIER___.h"
 
 SPEC_BEGIN(___FILEBASENAMEASIDENTIFIER___Spec)
 
