@@ -8,31 +8,9 @@
 		<string>com.mobileiq.iPhoneBase</string>
 	</array>
 	<key>Identifier</key>
-	<string>com.mobileiq.cocoaTouchApplicationUnitTestBundle</string>
+	<string>com.mobileiq.cocoaTouchFrameworkUnitTestBundle</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
-	<key>Options</key>
-	<array>
-		<dict>
-			<key>Identifier</key>
-			<string>coreData</string>
-			<key>Units</key>
-			<dict>
-				<key>true</key>
-				<dict>
-					<key>Targets</key>
-					<array>
-						<dict>
-							<key>Frameworks</key>
-							<array>
-								<string>CoreData</string>
-							</array>
-						</dict>
-					</array>
-				</dict>
-			</dict>
-		</dict>
-	</array>
 	<key>Targets</key>
 	<array>
 		<dict>
@@ -45,16 +23,16 @@
 				<string>UIKit</string>
 				<string>Foundation</string>
 			</array>
+			<key>ProductDependencies</key>
+			<array>
+				<integer>0</integer>
+			</array>
 			<key>SharedSettings</key>
 			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/___PARENTPACKAGENAME___.app/___PARENTPACKAGENAME___</string>
 				<key>FRAMEWORK_SEARCH_PATHS</key>
 				<string>$(SDKROOT)/Developer/Library/Frameworks $(DEVELOPER_LIBRARY_DIR)/Frameworks</string>
 				<key>GCC_PREFIX_HEADER</key>
 				<string>___PARENTPACKAGENAME___/___PARENTPACKAGENAME___-Prefix.pch</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
 			</dict>
 		</dict>
 	</array>

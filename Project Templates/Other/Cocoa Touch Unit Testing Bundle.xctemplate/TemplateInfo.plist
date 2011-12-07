@@ -9,16 +9,17 @@
 	</array>
 	<key>Concrete</key>
 	<true/>
-	<key>Definitions</key>
-	<dict/>
 	<key>Description</key>
-	<string>A target for building a unit test bundle that uses Cocoa Touch APIs andOCUnit.</string>
+	<string>A target for building a unit test bundle that uses Cocoa Touch APIs and OCUnit.</string>
 	<key>Identifier</key>
 	<string>com.mobileiq.cocoaTouchUnitTestBundle</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>
-	<array/>
+	<array>
+		<string>___PACKAGENAME___-Prefix.pch:objC:importCocoa</string>
+		<string>___PACKAGENAME___-Prefix.pch:objC:importFoundation</string>
+	</array>
 	<key>SortOrder</key>
 	<integer>1</integer>
 	<key>Targets</key>
@@ -28,7 +29,6 @@
 			<array>
 				<string>UIKit</string>
 				<string>Foundation</string>
-				<string>CoreGraphics</string>
 			</array>
 			<key>SharedSettings</key>
 			<dict>

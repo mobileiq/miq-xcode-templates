@@ -7,15 +7,6 @@
 		<key>*:*:importCocoa</key>
 		<string>#import &lt;UIKit/UIKit.h&gt;
 </string>
-		<key>*:shouldAutorotateToInterfaceOrientation</key>
-		<string>/*
- // Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	// Return YES for supported orientations.
-	return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
- */
-</string>
 		<key>___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPad</key>
 		<string>&lt;key&gt;UISupportedInterfaceOrientations~ipad&lt;/key&gt;
 &lt;array&gt;
@@ -36,16 +27,20 @@
 	<string>com.mobileiq.iPhoneBase</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
-	<key>Nodes</key>
-	<array>
-		<string>___PACKAGENAME___-Prefix.pch:objC:importFoundation</string>
-	</array>
 	<key>Platforms</key>
 	<array>
 		<string>com.apple.platform.iphoneos</string>
 	</array>
 	<key>Project</key>
 	<dict>
+		<key>Configurations</key>
+		<dict>
+			<key>Release</key>
+			<dict>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+		</dict>
 		<key>SDK</key>
 		<string>iphoneos</string>
 		<key>SharedSettings</key>
