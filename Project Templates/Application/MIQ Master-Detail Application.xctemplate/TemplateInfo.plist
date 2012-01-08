@@ -11,20 +11,51 @@
 	<true/>
 	<key>Definitions</key>
 	<dict>
-		<key>___VARIABLE_classPrefix:identifier___DetailViewController.h:ivars</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>View Controllers</string>
+			</array>
+		</dict>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>View Controllers</string>
+			</array>
+		</dict>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>View Controllers</string>
+			</array>
+		</dict>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>View Controllers</string>
+			</array>
+		</dict>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.h:ivars</key>
 		<string>@interface ___VARIABLE_classPrefix:identifier___DetailViewController : UIViewController &lt;UISplitViewControllerDelegate&gt;
 </string>
-		<key>___VARIABLE_classPrefix:identifier___DetailViewController.h:methods:detailDescriptionLabel</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.h:methods:detailDescriptionLabel</key>
 		<string>@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 </string>
-		<key>___VARIABLE_classPrefix:identifier___DetailViewController.h:methods:detailItem</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.h:methods:detailItem</key>
 		<string>@property (strong, nonatomic) id detailItem;
 </string>
-		<key>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:configureView</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:configureView</key>
 		<dict>
 			<key>Beginning</key>
-			<string>- (void)configureView
-{
+			<string>- (void)configureView {
     // Update the user interface for the detail item.
 </string>
 			<key>End</key>
@@ -33,17 +64,16 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:configureView:detailDescriptionLabel</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:configureView:detailDescriptionLabel</key>
 		<string>if (self.detailItem) {
     self.detailDescriptionLabel.text = [self.detailItem description];
 }</string>
-		<key>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:setDetailItem</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:setDetailItem</key>
 		<string>#pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
-{
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
+- (void)setDetailItem:(id)newDetailItem {
+    if (detailItem_ != newDetailItem) {
+        detailItem_ = newDetailItem;
         
         // Update the view.
         [self configureView];
@@ -54,62 +84,53 @@
     }        
 }
 </string>
-		<key>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:splitViewSupport</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:splitViewSupport</key>
 		<string>#pragma mark - Split view
 
-- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
-{
+- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController {
     barButtonItem.title = NSLocalizedString(@"Master", @"Master");
     [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
     self.masterPopoverController = popoverController;
 }
 
-- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
-{
+- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
     // Called when the view is shown again in the split view, invalidating the button and popover controller.
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
 }
 </string>
-		<key>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:viewControllerImplementation:configureView</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:viewControllerImplementation:configureView</key>
 		<string>[self configureView];</string>
-		<key>___VARIABLE_classPrefix:identifier___DetailViewController.m:private</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:private</key>
 		<string>@interface ___VARIABLE_classPrefix:identifier___DetailViewController ()
 - (void)configureView;
 @end
 </string>
-		<key>___VARIABLE_classPrefix:identifier___MasterViewController.h:ivars</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:ivars</key>
 		<string>@interface ___VARIABLE_classPrefix:identifier___MasterViewController : UITableViewController
 </string>
-		<key>___VARIABLE_classPrefix:identifier___MasterViewController.h:methods:detailViewController</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:methods:detailViewController</key>
 		<string>@property (strong, nonatomic) ___VARIABLE_classPrefix:identifier___DetailViewController *detailViewController;
 </string>
-		<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:canEditRowAtIndexPath</key>
-		<string>/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:canEditRowAtIndexPath</key>
+		<string>// Override to support conditional editing of the table view.
+//- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+//    // Return NO if you do not want the specified item to be editable.
+//    return YES;
+//}
 </string>
-		<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:canMoveRowAtIndexPath</key>
-		<string>/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:canMoveRowAtIndexPath</key>
+		<string>// Override to support conditional rearranging of the table view.
+//- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+//    // Return NO if you do not want the item to be re-orderable.
+//    return YES;
+//}
 </string>
-		<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath</key>
 		<dict>
 			<key>Beginning</key>
 			<string>// Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];</string>
@@ -120,67 +141,59 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath:configure</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath:configure</key>
 		<string>// Configure the cell.
 cell.textLabel.text = NSLocalizedString(@"Detail", @"Detail");
 </string>
-		<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:commitEditingStyle</key>
-		<string>/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source.
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }   
-}
-*/
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:commitEditingStyle</key>
+		<string>// Override to support editing the table view.
+//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+//    if (editingStyle == UITableViewCellEditingStyleDelete) {
+//        // Delete the row from the data source.
+//        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+//    }
+//    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+//        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+//    }   
+//}
 </string>
-		<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:initSection:initViewController:setup</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:initSection:initViewController:setup</key>
 		<string>self.clearsSelectionOnViewWillAppear = NO;
 self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);</string>
-		<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:moveRowAtIndexPath</key>
-		<string>/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:moveRowAtIndexPath</key>
+		<string>// Override to support rearranging the table view.
+//- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+//}
 </string>
-		<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfRowsInSection</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfRowsInSection</key>
 		<dict>
 			<key>Beginning</key>
-			<string>- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{</string>
+			<string>- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {</string>
 			<key>End</key>
 			<string>}
 </string>
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfRowsInSection:return</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfRowsInSection:return</key>
 		<string>return 1;
 </string>
-		<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfSectionsInTableView</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfSectionsInTableView</key>
 		<dict>
 			<key>Beginning</key>
 			<string>// Customize the number of sections in the table view.
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{</string>
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {</string>
 			<key>End</key>
 			<string>}
 </string>
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfSectionsInTableView:return</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfSectionsInTableView:return</key>
 		<string>return 1;
 </string>
-		<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:prepareForSegue</key>
-		<string>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:prepareForSegue</key>
+		<string>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
@@ -188,7 +201,7 @@ self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);</string>
     }
 }
 </string>
-		<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:select</key>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:select</key>
 		<string>[self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];</string>
 	</dict>
 	<key>Description</key>
@@ -199,47 +212,47 @@ self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);</string>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>
 	<array>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.h:comments</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.h:import:importCocoa</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.h:class</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.h:class:___VARIABLE_classPrefix:identifier___DetailViewController</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.h:ivars</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.h:methods</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.h:methods:detailViewController</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:comments</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:import:___VARIABLE_classPrefix:identifier___MasterViewController.h</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:import:___VARIABLE_classPrefix:identifier___DetailViewController.h</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:synthesize</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:synthesize:detailViewController = _detailViewController</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:initSection:initViewController:title</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:dealloc:_detailViewController</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:shouldAutorotateToInterfaceOrientation:return</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfSectionsInTableView:return</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfRowsInSection:return</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath:configure</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:canEditRowAtIndexPath</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:commitEditingStyle</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:moveRowAtIndexPath</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:canMoveRowAtIndexPath</string>
-		<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:didSelectRowAtIndexPath</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.h:comments</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.h:import:importCocoa</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.h:class</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.h:ivars</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.h:methods:detailItem</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.h:methods:detailDescriptionLabel</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:comments</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:import:___VARIABLE_classPrefix:identifier___DetailViewController.h</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:private</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:synthesize:detailItem = _detailItem</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:synthesize:detailDescriptionLabel = _detailDescriptionLabel</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:dealloc:_detailItem</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:dealloc:_detailDescriptionLabel</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:setDetailItem</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:configureView:detailDescriptionLabel</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:viewControllerImplementation:configureView</string>
-		<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:shouldAutorotateToInterfaceOrientation:return</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:comments</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:import:importCocoa</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:class</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:class:___VARIABLE_classPrefix:identifier___DetailViewController</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:ivars</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:methods</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:methods:detailViewController</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:comments</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:import:___VARIABLE_classPrefix:identifier___MasterViewController.h</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:import:___VARIABLE_classPrefix:identifier___DetailViewController.h</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:synthesize</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:synthesize:detailViewController = detailViewController_</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:initSection:initViewController:title</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:dealloc:detailViewController_</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:shouldAutorotateToInterfaceOrientation:return</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfSectionsInTableView:return</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfRowsInSection:return</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath:configure</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:canEditRowAtIndexPath</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:commitEditingStyle</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:moveRowAtIndexPath</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:canMoveRowAtIndexPath</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:didSelectRowAtIndexPath</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.h:comments</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.h:import:importCocoa</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.h:class</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.h:ivars</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.h:methods:detailItem</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.h:methods:detailDescriptionLabel</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:comments</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:import:___VARIABLE_classPrefix:identifier___DetailViewController.h</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:private</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:synthesize:detailItem = detailItem_</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:synthesize:detailDescriptionLabel = detailDescriptionLabel_</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:dealloc:detailItem_</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:dealloc:detailDescriptionLabel_</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:setDetailItem</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:configureView:detailDescriptionLabel</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:viewControllerImplementation:configureView</string>
+		<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:shouldAutorotateToInterfaceOrientation:return</string>
 		<string>___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPhone</string>
 	</array>
 	<key>Options</key>
@@ -254,20 +267,19 @@ self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);</string>
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:navigationController</key>
+							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:navigationController</key>
 							<string>@property (strong, nonatomic) UINavigationController *navigationController;
 </string>
-							<key>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:splitViewController</key>
+							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:splitViewController</key>
 							<string>@property (strong, nonatomic) UISplitViewController *splitViewController;
 </string>
-							<key>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:initSection:initViewController:title</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:initSection:initViewController:title</key>
 							<string>self.title = NSLocalizedString(@"Detail", @"Detail");</string>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath</key>
 							<dict>
 								<key>Beginning</key>
 								<string>// Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -282,22 +294,21 @@ self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);</string>
 								<key>Indent</key>
 								<integer>1</integer>
 							</dict>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:didSelectRowAtIndexPath</key>
-							<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:didSelectRowAtIndexPath</key>
+							<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (!self.detailViewController) {
         self.detailViewController = ___RP___[[___VARIABLE_classPrefix:identifier___DetailViewController alloc] initWithNibName:@"___VARIABLE_classPrefix:identifier___DetailViewController" bundle:nil]___AR___;
     }
     [self.navigationController pushViewController:self.detailViewController animated:YES];
 }
 </string>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:initSection:initViewController:title</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:initSection:initViewController:title</key>
 							<string>self.title = NSLocalizedString(@"Master", @"Master");</string>
 						</dict>
 						<key>Nodes</key>
 						<array>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___MasterViewController.h</string>
-							<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:initSection:initViewController:title</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___MasterViewController.h</string>
+							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:initSection:initViewController:title</string>
 						</array>
 					</dict>
 				</array>
@@ -306,17 +317,17 @@ self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);</string>
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
 							<string>UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
 UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
 splitViewController.delegate = (id)navigationController.topViewController;
 </string>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:detailViewController</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:detailViewController</key>
 							<string>self.detailViewController = (___VARIABLE_classPrefix:identifier___DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];</string>
 						</dict>
 						<key>Nodes</key>
 						<array>
-							<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:detailViewController</string>
+							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:detailViewController</string>
 						</array>
 						<key>RequiredOptions</key>
 						<dict>
@@ -327,19 +338,19 @@ splitViewController.delegate = (id)navigationController.topViewController;
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
 							<string>if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
     UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
     splitViewController.delegate = (id)navigationController.topViewController;
 }
 </string>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:detailViewController</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:detailViewController</key>
 							<string>self.detailViewController = (___VARIABLE_classPrefix:identifier___DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];</string>
 						</dict>
 						<key>Nodes</key>
 						<array>
-							<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:detailViewController</string>
+							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:detailViewController</string>
 						</array>
 						<key>RequiredOptions</key>
 						<dict>
@@ -360,18 +371,18 @@ splitViewController.delegate = (id)navigationController.topViewController;
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___DetailViewController.m:private</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:private</key>
 							<string>@interface ___VARIABLE_classPrefix:identifier___DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
 @end
 </string>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:initSection:initViewController:setup</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:initSection:initViewController:setup</key>
 							<string>if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
     self.clearsSelectionOnViewWillAppear = NO;
     self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
 }</string>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:select</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:select</key>
 							<string>if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
     [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
 }</string>
@@ -388,22 +399,23 @@ splitViewController.delegate = (id)navigationController.topViewController;
 						</dict>
 						<key>Nodes</key>
 						<array>
-							<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:initSection:initViewController:setup</string>
-							<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:select</string>
-							<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:synthesize:masterPopoverController = _masterPopoverController</string>
-							<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:dealloc:_masterPopoverController</string>
-							<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:splitViewSupport</string>
+							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:initSection:initViewController:setup</string>
+							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:select</string>
+							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:synthesize:masterPopoverController = masterPopoverController_</string>
+							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:dealloc:masterPopoverController_</string>
+							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:splitViewSupport</string>
 						</array>
 					</dict>
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
 							<string>if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
     ___VARIABLE_classPrefix:identifier___MasterViewController *masterViewController = ___RP___[[___VARIABLE_classPrefix:identifier___MasterViewController alloc] initWithNibName:@"___VARIABLE_classPrefix:identifier___MasterViewController_iPhone" bundle:nil]___AR___;
     self.navigationController = ___RP___[[UINavigationController alloc] initWithRootViewController:masterViewController]___AR___;
     self.window.rootViewController = self.navigationController;
-} else {
+} 
+else {
     ___VARIABLE_classPrefix:identifier___MasterViewController *masterViewController = ___RP___[[___VARIABLE_classPrefix:identifier___MasterViewController alloc] initWithNibName:@"___VARIABLE_classPrefix:identifier___MasterViewController_iPad" bundle:nil]___AR___;
     UINavigationController *masterNavigationController = ___RP___[[UINavigationController alloc] initWithRootViewController:masterViewController]___AR___;
     
@@ -416,12 +428,11 @@ splitViewController.delegate = (id)navigationController.topViewController;
     
     self.window.rootViewController = self.splitViewController;
 }</string>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath</key>
 							<dict>
 								<key>Beginning</key>
 								<string>// Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -439,9 +450,8 @@ splitViewController.delegate = (id)navigationController.topViewController;
 								<key>Indent</key>
 								<integer>1</integer>
 							</dict>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:didSelectRowAtIndexPath</key>
-							<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:didSelectRowAtIndexPath</key>
+							<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
 	    if (!self.detailViewController) {
 	        self.detailViewController = ___RP___[[___VARIABLE_classPrefix:identifier___DetailViewController alloc] initWithNibName:@"___VARIABLE_classPrefix:identifier___DetailViewController_iPhone" bundle:nil]___AR___;
@@ -464,22 +474,32 @@ splitViewController.delegate = (id)navigationController.topViewController;
 							<dict>
 								<key>Path</key>
 								<string>MasterViewController_iPad.xib</string>
+								<key>Group</key>
+								<array>
+									<string>Resources</string>
+									<string>Xibs</string>
+								</array>
 							</dict>
 							<key>en.lproj/___VARIABLE_classPrefix:identifier___MasterViewController_iPhone.xib</key>
 							<dict>
 								<key>Path</key>
 								<string>MasterViewController_iPhone.xib</string>
+								<key>Group</key>
+								<array>
+									<string>Resources</string>
+									<string>Xibs</string>
+								</array>
 							</dict>
 						</dict>
 						<key>Nodes</key>
 						<array>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:navigationController</string>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:splitViewController</string>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___DetailViewController.h</string>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:synthesize:navigationController = _navigationController</string>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:synthesize:splitViewController = _splitViewController</string>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:_navigationController</string>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:_splitViewController</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:navigationController</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:splitViewController</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___DetailViewController.h</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:synthesize:navigationController = navigationController_</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:synthesize:splitViewController = splitViewController_</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:navigationController_</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:splitViewController_</string>
 							<string>en.lproj/___VARIABLE_classPrefix:identifier___MasterViewController_iPhone.xib</string>
 							<string>en.lproj/___VARIABLE_classPrefix:identifier___MasterViewController_iPad.xib</string>
 							<string>en.lproj/___VARIABLE_classPrefix:identifier___DetailViewController_iPhone.xib</string>
@@ -514,13 +534,14 @@ splitViewController.delegate = (id)navigationController.topViewController;
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
 							<string>if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
     ___VARIABLE_classPrefix:identifier___MasterViewController *masterViewController = ___RP___[[___VARIABLE_classPrefix:identifier___MasterViewController alloc] initWithNibName:@"___VARIABLE_classPrefix:identifier___MasterViewController_iPhone" bundle:nil]___AR___;
     self.navigationController = ___RP___[[UINavigationController alloc] initWithRootViewController:masterViewController]___AR___;
     self.window.rootViewController = self.navigationController;
     masterViewController.managedObjectContext = self.managedObjectContext;
-} else {
+} 
+else {
     ___VARIABLE_classPrefix:identifier___MasterViewController *masterViewController = ___RP___[[___VARIABLE_classPrefix:identifier___MasterViewController alloc] initWithNibName:@"___VARIABLE_classPrefix:identifier___MasterViewController_iPad" bundle:nil]___AR___;
     UINavigationController *masterNavigationController = ___RP___[[UINavigationController alloc] initWithRootViewController:masterViewController]___AR___;
     
@@ -535,9 +556,8 @@ splitViewController.delegate = (id)navigationController.topViewController;
     masterViewController.detailViewController = detailViewController;
     masterViewController.managedObjectContext = self.managedObjectContext;
 }</string>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:didSelectRowAtIndexPath</key>
-							<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:didSelectRowAtIndexPath</key>
+							<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
 	    if (!self.detailViewController) {
 	        self.detailViewController = ___RP___[[___VARIABLE_classPrefix:identifier___DetailViewController alloc] initWithNibName:@"___VARIABLE_classPrefix:identifier___DetailViewController_iPhone" bundle:nil]___AR___;
@@ -545,7 +565,8 @@ splitViewController.delegate = (id)navigationController.topViewController;
         NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
         self.detailViewController.detailItem = selectedObject;    
         [self.navigationController pushViewController:self.detailViewController animated:YES];
-    } else {
+    } 
+    else {
         NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
         self.detailViewController.detailItem = selectedObject;    
     }
@@ -563,7 +584,7 @@ splitViewController.delegate = (id)navigationController.topViewController;
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
 							<string>if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
     UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
@@ -572,15 +593,15 @@ splitViewController.delegate = (id)navigationController.topViewController;
     UINavigationController *masterNavigationController = [splitViewController.viewControllers objectAtIndex:0];
     ___VARIABLE_classPrefix:identifier___MasterViewController *controller = (___VARIABLE_classPrefix:identifier___MasterViewController *)masterNavigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
-} else {
+} 
+else {
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     ___VARIABLE_classPrefix:identifier___MasterViewController *controller = (___VARIABLE_classPrefix:identifier___MasterViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
 }
 </string>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:didSelectRowAtIndexPath</key>
-							<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:didSelectRowAtIndexPath</key>
+							<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
         self.detailViewController.detailItem = selectedObject;    
@@ -590,8 +611,8 @@ splitViewController.delegate = (id)navigationController.topViewController;
 						</dict>
 						<key>Nodes</key>
 						<array>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___MasterViewController.h</string>
-							<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:prepareForSegue</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___MasterViewController.h</string>
+							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:prepareForSegue</string>
 						</array>
 						<key>RequiredOptions</key>
 						<dict>
@@ -607,7 +628,7 @@ splitViewController.delegate = (id)navigationController.topViewController;
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___DetailViewController.m:private</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:private</key>
 							<string>@interface ___VARIABLE_classPrefix:identifier___DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
@@ -621,17 +642,17 @@ splitViewController.delegate = (id)navigationController.topViewController;
 						</dict>
 						<key>Nodes</key>
 						<array>
-							<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:initSection:initViewController:setup</string>
-							<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:select</string>
-							<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:synthesize:masterPopoverController = _masterPopoverController</string>
-							<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:dealloc:_masterPopoverController</string>
-							<string>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:splitViewSupport</string>
+							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:initSection:initViewController:setup</string>
+							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:select</string>
+							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:synthesize:masterPopoverController = masterPopoverController_</string>
+							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:dealloc:masterPopoverController_</string>
+							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:splitViewSupport</string>
 						</array>
 					</dict>
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
 							<dict>
 								<key>Beginning</key>
 								<string>
@@ -652,19 +673,29 @@ self.splitViewController.viewControllers = [NSArray arrayWithObjects:masterNavig
 							<dict>
 								<key>Path</key>
 								<string>DetailViewController_iPad.xib</string>
+								<key>Group</key>
+								<array>
+									<string>Resources</string>
+									<string>Xibs</string>
+								</array>
 							</dict>
 							<key>en.lproj/___VARIABLE_classPrefix:identifier___MasterViewController.xib</key>
 							<dict>
 								<key>Path</key>
 								<string>MasterViewController_iPad.xib</string>
+								<key>Group</key>
+								<array>
+									<string>Resources</string>
+									<string>Xibs</string>
+								</array>
 							</dict>
 						</dict>
 						<key>Nodes</key>
 						<array>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:splitViewController</string>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___DetailViewController.h</string>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:synthesize:splitViewController = _splitViewController</string>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:_splitViewController</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:splitViewController</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___DetailViewController.h</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:synthesize:splitViewController = splitViewController_</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:splitViewController_</string>
 							<string>en.lproj/___VARIABLE_classPrefix:identifier___MasterViewController.xib</string>
 							<string>en.lproj/___VARIABLE_classPrefix:identifier___DetailViewController.xib</string>
 						</array>
@@ -677,9 +708,8 @@ self.splitViewController.viewControllers = [NSArray arrayWithObjects:masterNavig
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:didSelectRowAtIndexPath</key>
-							<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:didSelectRowAtIndexPath</key>
+							<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
     self.detailViewController.detailItem = selectedObject;    
 }
@@ -699,13 +729,13 @@ self.splitViewController.viewControllers = [NSArray arrayWithObjects:masterNavig
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup:coreData</key>
+							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup:coreData</key>
 							<string>masterViewController.detailViewController = detailViewController;
 masterViewController.managedObjectContext = self.managedObjectContext;</string>
 						</dict>
 						<key>Nodes</key>
 						<array>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup:coreData</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup:coreData</string>
 						</array>
 						<key>RequiredOptions</key>
 						<dict>
@@ -718,7 +748,7 @@ masterViewController.managedObjectContext = self.managedObjectContext;</string>
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
 							<string>UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
 UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
 splitViewController.delegate = (id)navigationController.topViewController;
@@ -729,7 +759,7 @@ controller.managedObjectContext = self.managedObjectContext;</string>
 						</dict>
 						<key>Nodes</key>
 						<array>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___MasterViewController.h</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___MasterViewController.h</string>
 						</array>
 						<key>RequiredOptions</key>
 						<dict>
@@ -745,16 +775,15 @@ controller.managedObjectContext = self.managedObjectContext;</string>
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___DetailViewController.h:ivars</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.h:ivars</key>
 							<string>@interface ___VARIABLE_classPrefix:identifier___DetailViewController : UIViewController
 </string>
-							<key>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:setDetailItem</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:setDetailItem</key>
 							<string>#pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
-{
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
+- (void)setDetailItem:(id)newDetailItem {
+    if (detailItem_ != newDetailItem) {
+        detailItem_ = newDetailItem;
         
         // Update the view.
         [self configureView];
@@ -771,7 +800,7 @@ controller.managedObjectContext = self.managedObjectContext;</string>
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
 							<dict>
 								<key>Beginning</key>
 								<string>
@@ -780,12 +809,11 @@ self.navigationController = ___RP___[[UINavigationController alloc] initWithRoot
 								<key>End</key>
 								<string>self.window.rootViewController = self.navigationController;</string>
 							</dict>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath</key>
 							<dict>
 								<key>Beginning</key>
 								<string>// Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -805,18 +833,28 @@ self.navigationController = ___RP___[[UINavigationController alloc] initWithRoot
 							<dict>
 								<key>Path</key>
 								<string>DetailViewController_iPhone.xib</string>
+								<key>Group</key>
+								<array>
+									<string>Resources</string>
+									<string>Xibs</string>
+								</array>
 							</dict>
 							<key>en.lproj/___VARIABLE_classPrefix:identifier___MasterViewController.xib</key>
 							<dict>
 								<key>Path</key>
 								<string>MasterViewController_iPhone.xib</string>
+								<key>Group</key>
+								<array>
+									<string>Resources</string>
+									<string>Xibs</string>
+								</array>
 							</dict>
 						</dict>
 						<key>Nodes</key>
 						<array>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:navigationController</string>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:synthesize:navigationController = _navigationController</string>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:_navigationController</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:navigationController</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:synthesize:navigationController = navigationController_</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:navigationController_</string>
 							<string>en.lproj/___VARIABLE_classPrefix:identifier___MasterViewController.xib</string>
 							<string>en.lproj/___VARIABLE_classPrefix:identifier___DetailViewController.xib</string>
 						</array>
@@ -844,13 +882,13 @@ self.navigationController = ___RP___[[UINavigationController alloc] initWithRoot
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.h:class:___VARIABLE_classPrefix:identifier___DetailViewController</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:class:___VARIABLE_classPrefix:identifier___DetailViewController</key>
 							<string></string>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.h:methods:detailViewController</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:methods:detailViewController</key>
 							<string></string>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:dealloc:_detailViewController</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:dealloc:detailViewController_</key>
 							<string></string>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:synthesize:detailViewController = _detailViewController</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:synthesize:detailViewController = detailViewController_</key>
 							<string></string>
 						</dict>
 						<key>RequiredOptions</key>
@@ -862,7 +900,7 @@ self.navigationController = ___RP___[[UINavigationController alloc] initWithRoot
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:import:___VARIABLE_classPrefix:identifier___DetailViewController.h</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:import:___VARIABLE_classPrefix:identifier___DetailViewController.h</key>
 							<string></string>
 						</dict>
 						<key>RequiredOptions</key>
@@ -876,11 +914,10 @@ self.navigationController = ___RP___[[UINavigationController alloc] initWithRoot
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup:coreData</key>
+							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup:coreData</key>
 							<string>masterViewController.managedObjectContext = self.managedObjectContext;</string>
-							<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:didSelectRowAtIndexPath</key>
-							<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:didSelectRowAtIndexPath</key>
+							<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (!self.detailViewController) {
         self.detailViewController = ___RP___[[___VARIABLE_classPrefix:identifier___DetailViewController alloc] initWithNibName:@"___VARIABLE_classPrefix:identifier___DetailViewController" bundle:nil]___AR___;
     }
@@ -892,7 +929,7 @@ self.navigationController = ___RP___[[UINavigationController alloc] initWithRoot
 						</dict>
 						<key>Nodes</key>
 						<array>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup:coreData</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup:coreData</string>
 						</array>
 						<key>RequiredOptions</key>
 						<dict>
@@ -905,15 +942,15 @@ self.navigationController = ___RP___[[UINavigationController alloc] initWithRoot
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
 							<string>UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
 ___VARIABLE_classPrefix:identifier___MasterViewController *controller = (___VARIABLE_classPrefix:identifier___MasterViewController *)navigationController.topViewController;
 controller.managedObjectContext = self.managedObjectContext;</string>
 						</dict>
 						<key>Nodes</key>
 						<array>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___MasterViewController.h</string>
-							<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:prepareForSegue</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___MasterViewController.h</string>
+							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:prepareForSegue</string>
 						</array>
 						<key>RequiredOptions</key>
 						<dict>
@@ -935,17 +972,17 @@ controller.managedObjectContext = self.managedObjectContext;</string>
 				<dict>
 					<key>Definitions</key>
 					<dict>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath</key>
 						<string></string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath:configure</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath:configure</key>
 						<string></string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfRowsInSection</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfRowsInSection</key>
 						<string></string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfRowsInSection:return</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfRowsInSection:return</key>
 						<string></string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfSectionsInTableView</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfSectionsInTableView</key>
 						<string></string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfSectionsInTableView:return</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfSectionsInTableView:return</key>
 						<string></string>
 					</dict>
 					<key>RequiredOptions</key>
@@ -963,7 +1000,7 @@ controller.managedObjectContext = self.managedObjectContext;</string>
 							<key>Path</key>
 							<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
 						</dict>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.h:ivars</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:ivars</key>
 						<dict>
 							<key>Beginning</key>
 							<string>#import &lt;CoreData/CoreData.h&gt;
@@ -973,23 +1010,21 @@ controller.managedObjectContext = self.managedObjectContext;</string>
 							<key>Indent</key>
 							<integer>1</integer>
 						</dict>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.h:methods:coreData</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:methods:coreData</key>
 						<string>@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 </string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:canMoveRowAtIndexPath</key>
-						<string>- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:canMoveRowAtIndexPath</key>
+						<string>- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     // The table view should not be re-orderable.
     return NO;
 }
 </string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath:configure</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:cellForRowAtIndexPath:configure</key>
 						<string>[self configureCell:cell atIndexPath:indexPath];
 </string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:commitEditingStyle</key>
-						<string>- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:commitEditingStyle</key>
+						<string>- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the managed object for the given index path
         NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
@@ -1009,20 +1044,18 @@ controller.managedObjectContext = self.managedObjectContext;</string>
     }   
 }
 </string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:configureCell</key>
-						<string>- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
-{
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:configureCell</key>
+						<string>- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     NSManagedObject *managedObject = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = [[managedObject valueForKey:@"timeStamp"] description];
 }
 </string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:coreData</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:coreData</key>
 						<string>#pragma mark - Fetched results controller
 
-- (NSFetchedResultsController *)fetchedResultsController
-{
-    if (__fetchedResultsController != nil) {
-        return __fetchedResultsController;
+- (NSFetchedResultsController *)fetchedResultsController {
+    if (fetchedResultsController_ != nil) {
+        return fetchedResultsController_;
     }
     
     // Set up the fetched results controller.
@@ -1058,17 +1091,15 @@ controller.managedObjectContext = self.managedObjectContext;</string>
 	    abort();
 	}
     
-    return __fetchedResultsController;
+    return fetchedResultsController_;
 }    
 
-- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
-{
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
     [self.tableView beginUpdates];
 }
 
-- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id &lt;NSFetchedResultsSectionInfo&gt;)sectionInfo
-           atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type
-{
+- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id &lt;NSFetchedResultsSectionInfo&gt;)sectionInfo 
+           atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type {
     switch(type) {
         case NSFetchedResultsChangeInsert:
             [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
@@ -1082,8 +1113,7 @@ controller.managedObjectContext = self.managedObjectContext;</string>
 
 - (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject
        atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type
-      newIndexPath:(NSIndexPath *)newIndexPath
-{
+      newIndexPath:(NSIndexPath *)newIndexPath {
     UITableView *tableView = self.tableView;
     
     switch(type) {
@@ -1106,24 +1136,21 @@ controller.managedObjectContext = self.managedObjectContext;</string>
     }
 }
 
-- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
     [self.tableView endUpdates];
 }
 
 /*
 // Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed. 
  
- - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
+ - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
     // In the simplest, most efficient, case, reload the table view.
     [self.tableView reloadData];
 }
  */
 </string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:insertNewObject</key>
-						<string>- (void)insertNewObject
-{
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:insertNewObject</key>
+						<string>- (void)insertNewObject {
     // Create a new instance of the entity managed by the fetched results controller.
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
@@ -1146,25 +1173,25 @@ controller.managedObjectContext = self.managedObjectContext;</string>
     }
 }
 </string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:moveRowAtIndexPath</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:moveRowAtIndexPath</key>
 						<string></string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfRowsInSection:return</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfRowsInSection:return</key>
 						<string>id &lt;NSFetchedResultsSectionInfo&gt; sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
 return [sectionInfo numberOfObjects];
 </string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfSectionsInTableView:return</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:numberOfSectionsInTableView:return</key>
 						<string>return [[self.fetchedResultsController sections] count];
 </string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:coreData</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:coreData</key>
 						<string>// Set up the edit and add buttons.
 self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
 UIBarButtonItem *addButton = ___RP___[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject)]___AR___;
 self.navigationItem.rightBarButtonItem = addButton;
 </string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:select</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:select</key>
 						<string></string>
-						<key>___VARIABLE_classPrefix:identifier___MasterViewController.m:import:privateCoreData</key>
+						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:import:privateCoreData</key>
 						<string>@interface ___VARIABLE_classPrefix:identifier___MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
@@ -1172,16 +1199,16 @@ self.navigationItem.rightBarButtonItem = addButton;
 					</dict>
 					<key>Nodes</key>
 					<array>
-						<string>___VARIABLE_classPrefix:identifier___MasterViewController.h:methods:coreData</string>
-						<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:import:privateCoreData</string>
-						<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:coreData</string>
-						<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:synthesize:fetchedResultsController = __fetchedResultsController</string>
-						<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:synthesize:managedObjectContext = __managedObjectContext</string>
-						<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:dealloc:__fetchedResultsController</string>
-						<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:dealloc:__managedObjectContext</string>
-						<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:coreData</string>
-						<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:configureCell</string>
-						<string>___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:insertNewObject</string>
+						<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:methods:coreData</string>
+						<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:import:privateCoreData</string>
+						<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:coreData</string>
+						<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:synthesize:fetchedResultsController = fetchedResultsController_</string>
+						<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:synthesize:managedObjectContext = managedObjectContext_</string>
+						<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:dealloc:fetchedResultsController_</string>
+						<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:dealloc:managedObjectContext_</string>
+						<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:viewControllerImplementation:coreData</string>
+						<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:configureCell</string>
+						<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:insertNewObject</string>
 					</array>
 				</dict>
 			</dict>
@@ -1196,14 +1223,13 @@ self.navigationItem.rightBarButtonItem = addButton;
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:setDetailItem</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:setDetailItem</key>
 							<string>#pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
-{
-    if (_detailItem != newDetailItem) {
-        [_detailItem release]; 
-        _detailItem = [newDetailItem retain]; 
+- (void)setDetailItem:(id)newDetailItem {
+    if (detailItem_ != newDetailItem) {
+        [detailItem_ release]; 
+        detailItem_ = [newDetailItem retain]; 
 
         // Update the view.
         [self configureView];
@@ -1219,14 +1245,13 @@ self.navigationItem.rightBarButtonItem = addButton;
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:setDetailItem</key>
+							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:setDetailItem</key>
 							<string>#pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
-{
-    if (_detailItem != newDetailItem) {
-        [_detailItem release]; 
-        _detailItem = [newDetailItem retain]; 
+- (void)setDetailItem:(id)newDetailItem {
+    if (detailItem_ != newDetailItem) {
+        [detailItem_ release]; 
+        detailItem_ = [newDetailItem retain]; 
 
         // Update the view.
         [self configureView];

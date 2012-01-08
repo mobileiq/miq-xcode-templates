@@ -167,9 +167,9 @@
 						<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:synthesize:managedObjectContext = managedObjectContext_</string>
 						<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:synthesize:managedObjectModel = managedObjectModel_</string>
 						<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:synthesize:persistentStoreCoordinator = persistentStoreCoordinator_</string>
-						<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:__managedObjectContext</string>
-						<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:__managedObjectModel</string>
-						<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:__persistentStoreCoordinator</string>
+						<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:managedObjectContext_</string>
+						<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:managedObjectModel_</string>
+						<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:persistentStoreCoordinator_</string>
 						<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillTerminate:save</string>
 						<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:coreData</string>
 						<string>___PACKAGENAME___-Prefix.pch:objC:importCoreData</string>

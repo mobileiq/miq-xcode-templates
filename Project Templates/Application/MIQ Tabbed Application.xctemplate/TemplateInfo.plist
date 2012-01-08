@@ -14,21 +14,73 @@
 		<dict>
 			<key>Path</key>
 			<string>first.png</string>
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+				<string>Images</string>
+			</array>
 		</dict>
 		<key>first@2x.png</key>
 		<dict>
 			<key>Path</key>
 			<string>first@2x.png</string>
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+				<string>Images</string>
+			</array>
 		</dict>
 		<key>second.png</key>
 		<dict>
 			<key>Path</key>
 			<string>second.png</string>
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+				<string>Images</string>
+			</array>
 		</dict>
 		<key>second@2x.png</key>
 		<dict>
 			<key>Path</key>
 			<string>second@2x.png</string>
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+				<string>Images</string>
+			</array>
+		</dict>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___FirstViewController.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>View Controllers</string>
+			</array>
+		</dict>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___FirstViewController.m</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>View Controllers</string>
+			</array>
+		</dict>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___SecondViewController.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>View Controllers</string>
+			</array>
+		</dict>
+		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___SecondViewController.m</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>View Controllers</string>
+			</array>
 		</dict>
 	</dict>
 	<key>Description</key>
@@ -106,8 +158,8 @@ self.tabBarItem.image = [UIImage imageNamed:@"second"];</string>
 							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:tabBarController</string>
 							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___FirstViewController.h</string>
 							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___SecondViewController.h</string>
-							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:synthesize:tabBarController = _tabBarController</string>
-							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:_tabBarController</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:synthesize:tabBarController = tabBarController_</string>
+							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:tabBarController_</string>
 							<string>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:tabBarMethods</string>
 							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___FirstViewController.m:implementation:initSection:initViewController:setup</string>
 							<string>Classes/View Controllers/___VARIABLE_classPrefix:identifier___SecondViewController.m:implementation:initSection:initViewController:setup</string>
