@@ -36,9 +36,9 @@
 		<key>___VARIABLE_classPrefix:identifier___DataViewController.h:ivars</key>
 		<string>@interface ___VARIABLE_classPrefix:identifier___DataViewController : UIViewController</string>
 		<key>___VARIABLE_classPrefix:identifier___DataViewController.h:methods:dataLabel</key>
-		<string>@property (strong, nonatomic) IBOutlet UILabel *dataLabel;</string>
+		<string>@property (___STRONG___, nonatomic) IBOutlet UILabel *dataLabel;</string>
 		<key>___VARIABLE_classPrefix:identifier___DataViewController.h:methods:dataObject</key>
-		<string>@property (strong, nonatomic) id dataObject;</string>
+		<string>@property (___STRONG___, nonatomic) id dataObject;</string>
 		<key>___VARIABLE_classPrefix:identifier___DataViewController.m:implementation:viewControllerImplementation</key>
 		<dict>
 			<key>Beginning</key>
@@ -154,14 +154,14 @@ _pageData = [[dateFormatter monthSymbols] copy];</string>
  */
 
 @interface ___VARIABLE_classPrefix:identifier___ModelController()
-@property (readonly, strong, nonatomic) NSArray *pageData;
+@property (readonly, ___STRONG___, nonatomic) NSArray *pageData;
 @end
 </string>
 		<key>___VARIABLE_classPrefix:identifier___RootViewController.h:ivars</key>
 		<string>@interface ___VARIABLE_classPrefix:identifier___RootViewController : UIViewController &lt;UIPageViewControllerDelegate&gt;
 </string>
 		<key>___VARIABLE_classPrefix:identifier___RootViewController.h:methods:pageViewController</key>
-		<string>@property (strong, nonatomic) UIPageViewController *pageViewController;
+		<string>@property (___STRONG___, nonatomic) UIPageViewController *pageViewController;
 </string>
 		<key>___VARIABLE_classPrefix:identifier___RootViewController.m:implementation:UIPageViewController</key>
 		<dict>
@@ -223,7 +223,7 @@ self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;</stri
 		</dict>
 		<key>___VARIABLE_classPrefix:identifier___RootViewController.m:private</key>
 		<string>@interface ___VARIABLE_classPrefix:identifier___RootViewController ()
-@property (readonly, strong, nonatomic) ___VARIABLE_classPrefix:identifier___ModelController *modelController;
+@property (readonly, ___STRONG___, nonatomic) ___VARIABLE_classPrefix:identifier___ModelController *modelController;
 @end
 </string>
 	</dict>

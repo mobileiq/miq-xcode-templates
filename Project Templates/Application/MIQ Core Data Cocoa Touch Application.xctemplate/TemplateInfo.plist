@@ -44,9 +44,9 @@
 						<key>___PACKAGENAME___-Prefix.pch:objC:importCoreData</key>
 						<string>#import &lt;CoreData/CoreData.h&gt;</string>
 						<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:coreData</key>
-						<string>@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+						<string>@property (readonly, ___STRONG___, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (readonly, ___STRONG___, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (readonly, ___STRONG___, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;

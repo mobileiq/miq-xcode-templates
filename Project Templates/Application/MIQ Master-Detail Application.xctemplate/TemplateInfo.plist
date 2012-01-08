@@ -47,10 +47,10 @@
 		<string>@interface ___VARIABLE_classPrefix:identifier___DetailViewController : UIViewController &lt;UISplitViewControllerDelegate&gt;
 </string>
 		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.h:methods:detailDescriptionLabel</key>
-		<string>@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+		<string>@property (___STRONG___, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 </string>
 		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.h:methods:detailItem</key>
-		<string>@property (strong, nonatomic) id detailItem;
+		<string>@property (___STRONG___, nonatomic) id detailItem;
 </string>
 		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:configureView</key>
 		<dict>
@@ -110,7 +110,7 @@
 		<string>@interface ___VARIABLE_classPrefix:identifier___MasterViewController : UITableViewController
 </string>
 		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:methods:detailViewController</key>
-		<string>@property (strong, nonatomic) ___VARIABLE_classPrefix:identifier___DetailViewController *detailViewController;
+		<string>@property (___STRONG___, nonatomic) ___VARIABLE_classPrefix:identifier___DetailViewController *detailViewController;
 </string>
 		<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:canEditRowAtIndexPath</key>
 		<string>// Override to support conditional editing of the table view.
@@ -268,10 +268,10 @@ self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);</string>
 						<key>Definitions</key>
 						<dict>
 							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:navigationController</key>
-							<string>@property (strong, nonatomic) UINavigationController *navigationController;
+							<string>@property (___STRONG___, nonatomic) UINavigationController *navigationController;
 </string>
 							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:splitViewController</key>
-							<string>@property (strong, nonatomic) UISplitViewController *splitViewController;
+							<string>@property (___STRONG___, nonatomic) UISplitViewController *splitViewController;
 </string>
 							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:implementation:initSection:initViewController:title</key>
 							<string>self.title = NSLocalizedString(@"Detail", @"Detail");</string>
@@ -373,7 +373,7 @@ splitViewController.delegate = (id)navigationController.topViewController;
 						<dict>
 							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:private</key>
 							<string>@interface ___VARIABLE_classPrefix:identifier___DetailViewController ()
-@property (strong, nonatomic) UIPopoverController *masterPopoverController;
+@property (___STRONG___, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
 @end
 </string>
@@ -630,7 +630,7 @@ else {
 						<dict>
 							<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___DetailViewController.m:private</key>
 							<string>@interface ___VARIABLE_classPrefix:identifier___DetailViewController ()
-@property (strong, nonatomic) UIPopoverController *masterPopoverController;
+@property (___STRONG___, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
 @end
 </string>
@@ -1011,8 +1011,8 @@ controller.managedObjectContext = self.managedObjectContext;</string>
 							<integer>1</integer>
 						</dict>
 						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.h:methods:coreData</key>
-						<string>@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+						<string>@property (___STRONG___, nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (___STRONG___, nonatomic) NSManagedObjectContext *managedObjectContext;
 </string>
 						<key>Classes/View Controllers/___VARIABLE_classPrefix:identifier___MasterViewController.m:implementation:canMoveRowAtIndexPath</key>
 						<string>- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {

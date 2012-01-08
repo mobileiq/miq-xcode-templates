@@ -129,7 +129,7 @@
 								<integer>1</integer>
 							</dict>
 							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:tabBarController</key>
-							<string>@property (strong, nonatomic) UITabBarController *tabBarController;
+							<string>@property (___STRONG___, nonatomic) UITabBarController *tabBarController;
 </string>
 							<key>Classes/Application/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
 							<string>UIViewController *viewController1 = ___RP___[[___VARIABLE_classPrefix:identifier___FirstViewController alloc] initWithNibName:@"___VARIABLE_classPrefix:identifier___FirstViewController" bundle:nil]___AR___;

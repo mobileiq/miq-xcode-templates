@@ -54,6 +54,8 @@
 							<string>[</string>
 							<key>RT</key>
 							<string> retain]</string>
+							<key>STRONG</key>
+							<string>retain</string>
 						</dict>
 					</dict>
 				</array>
@@ -68,6 +70,8 @@
 							<string></string>
 							<key>RT</key>
 							<string></string>
+							<key>STRONG</key>
+							<string>___STRONG___</string>
 						</dict>
 						<key>Project</key>
 						<dict>
