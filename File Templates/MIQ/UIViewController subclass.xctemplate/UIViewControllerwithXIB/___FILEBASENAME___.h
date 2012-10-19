@@ -6,7 +6,7 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-___IMPORTHEADER_viewControllerSubclass___
+#import "___VARIABLE_viewControllerSubclass___.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___ : ___VARIABLE_viewControllerSubclass___
 

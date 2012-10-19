@@ -6,7 +6,7 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-___IMPORTHEADER_categoryClass___
+#import "___VARIABLE_categoryClass:identifier___.h"
 
 @interface ___VARIABLE_categoryClass:identifier___ (___VARIABLE_categoryName:identifier___)
 
