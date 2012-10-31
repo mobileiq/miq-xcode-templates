@@ -47,7 +47,23 @@
 				<string>Application</string>
 				<string>Logic</string>
 				<string>Kiwi</string>
+				<string>SenTest</string>
+				<string>SenTestWithSubclass</string>
 			</array>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string></string>
+			<key>Description</key>
+			<string>What class to subclass for the test</string>
+			<key>Identifier</key>
+			<string>cocoaTouchSubclass</string>
+			<key>Name</key>
+			<string>Subclass of</string>
+			<key>Required</key>
+			<string>NO</string>
+			<key>Type</key>
+			<string>text</string>
 		</dict>
 	</array>
 	<key>Platforms</key>
